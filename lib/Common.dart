@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:protfolio/About.dart';
+import 'package:protfolio/Home.dart';
 
 Widget Navbar(BuildContext context) {
   return Container(
@@ -15,7 +17,12 @@ Widget Navbar(BuildContext context) {
         ),
         const SizedBox(width: 80),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomePage()),
+            );
+          },
           child: const Text(
             "Home",
             style: TextStyle(
@@ -23,7 +30,12 @@ Widget Navbar(BuildContext context) {
           ),
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => About()),
+            );
+          },
           child: const Text(
             "About",
             style: TextStyle(

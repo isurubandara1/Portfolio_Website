@@ -81,134 +81,137 @@ class _AnimatedContentState extends State<AnimatedContent>
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        // Text and buttons
-        SlideTransition(
-          position: _textOffsetAnimation,
-          child: FadeTransition(
-            opacity: _fadeInTextAnimation,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "👋🏻 𝗛𝗶, 𝗧𝗵𝗲𝗿𝗲!",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
-                ),
-                SizedBox(
-                  height: 30,
-                ),
-                RichText(
-                  text: TextSpan(
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          // Text and buttons
+          SlideTransition(
+            position: _textOffsetAnimation,
+            child: FadeTransition(
+              opacity: _fadeInTextAnimation,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "👋🏻 𝗛𝗶, 𝗧𝗵𝗲𝗿𝗲!",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  RichText(
+                    text: TextSpan(
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                      children: [
+                        TextSpan(
+                          text: "I'm ",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 45,
+                          ),
+                        ),
+                        TextSpan(
+                          text: "Isuru Bandara", // Change name here
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 45,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Text(
+                    "Flutter Mobile App Developer with a passion for creating seamless digital experiences.",
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w100,
+                      fontSize: 15,
+                    ),
+                  ),
+                  Text(
+                    "Excited about the future of mobile tech, let's connect and bring your app ideas to life!",
+                    textAlign: TextAlign.start,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w100,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
                     children: [
-                      TextSpan(
-                        text: "I'm ",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.blue,
+                          onPrimary: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(7.0),
+                            side: BorderSide(color: Colors.blue, width: 2.0),
+                          ),
+                          minimumSize: Size(120, 60),
                         ),
+                        child: const Text("Contact"),
                       ),
-                      TextSpan(
-                        text: "Isuru Bandara", // Change name here
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
+                      SizedBox(width: 16),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.black12,
+                          onPrimary: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(7.0),
+                            side: BorderSide(color: Colors.blue, width: 2.0),
+                          ),
+                          minimumSize: Size(120, 60),
                         ),
+                        child: const Text("Download CV"),
                       ),
                     ],
                   ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  "Mobile App Developer with a passion for creating seamless digital experiences.",
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w100,
-                    fontSize: 15,
-                  ),
-                ),
-                Text(
-                  " Excited about the future of mobile tech, let's connect and bring your app ideas to life!",
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w100,
-                    fontSize: 15,
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.blue,
-                        onPrimary: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(7.0),
-                          side: BorderSide(color: Colors.blue, width: 2.0),
-                        ),
-                        minimumSize: Size(120, 60),
-                      ),
-                      child: const Text("Contact"),
-                    ),
-                    SizedBox(width: 16),
-                    ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.black12,
-                        onPrimary: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(7.0),
-                          side: BorderSide(color: Colors.blue, width: 2.0),
-                        ),
-                        minimumSize: Size(120, 60),
-                      ),
-                      child: const Text("Download CV"),
-                    ),
-                  ],
-                ),
-              ],
+                ],
+              ),
             ),
           ),
-        ),
 
-        // Spacer
-        SizedBox(width: 16),
+          // Spacer
+          SizedBox(width: 16),
 
-        // Profile image
-        SlideTransition(
-          position: _imageOffsetAnimation,
-          child: Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              // border: Border.all(
-              //    color: Colors.blue,
-              //   width: 2,
-              // ),
-            ),
-            child: ClipOval(
-              child: SizedBox(
-                width: 450,
-                height: 450,
-                child: Image.asset(
-                  "assets/1.png",
-                  fit: BoxFit.fill,
+          // Profile image
+          SlideTransition(
+            position: _imageOffsetAnimation,
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                // border: Border.all(
+                //    color: Colors.blue,
+                //   width: 2,
+                // ),
+              ),
+              child: ClipOval(
+                child: SizedBox(
+                  width: 450,
+                  height: 450,
+                  child: Image.asset(
+                    "assets/1.png",
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
