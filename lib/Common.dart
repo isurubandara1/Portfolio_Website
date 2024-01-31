@@ -1,6 +1,9 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:protfolio/About.dart';
 import 'package:protfolio/Home.dart';
+import 'package:protfolio/Service.dart';
 
 Widget Navbar(BuildContext context) {
   return Container(
@@ -43,7 +46,12 @@ Widget Navbar(BuildContext context) {
           ),
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Service()),
+            );
+          },
           child: const Text(
             "Experience",
             style: TextStyle(
