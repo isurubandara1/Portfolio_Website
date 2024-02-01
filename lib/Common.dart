@@ -5,6 +5,8 @@ import 'package:protfolio/About.dart';
 import 'package:protfolio/Home.dart';
 import 'package:protfolio/Service.dart';
 
+import 'Protfolio.dart';
+
 Widget Navbar(BuildContext context) {
   return Container(
     height: MediaQuery.of(context).size.width * 0.05,
@@ -59,7 +61,12 @@ Widget Navbar(BuildContext context) {
           ),
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Protfolio()),
+            );
+          },
           child: const Text(
             "Projects",
             style: TextStyle(

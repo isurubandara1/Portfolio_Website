@@ -145,7 +145,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                       ),
                                       SizedBox(width: 10),
                                       Text(
-                                        "Exellent   90%",
+                                        "Excellent    90%",
                                         style: TextStyle(
                                             color: Colors.blue, fontSize: 20),
                                       ),
@@ -161,7 +161,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                       ),
                                       SizedBox(width: 10),
                                       Text(
-                                        "Exellent   85%",
+                                        "Excellent    85%",
                                         style: TextStyle(
                                             color: Colors.blue, fontSize: 20),
                                       ),
@@ -179,7 +179,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         ),
                                         SizedBox(width: 10),
                                         Text(
-                                          "Exellent   60%",
+                                          "Excellent    60%",
                                           style: TextStyle(
                                               color: Colors.blue, fontSize: 20),
                                         ),
@@ -201,7 +201,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           padding:
                                               const EdgeInsets.only(left: 15),
                                           child: Text(
-                                            "Exellent   80%",
+                                            "Excellent    80%",
                                             style: TextStyle(
                                                 color: Colors.blue,
                                                 fontSize: 20),
@@ -225,7 +225,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           padding:
                                               const EdgeInsets.only(left: 5),
                                           child: Text(
-                                            "Exellent   80%",
+                                            "Excellent    80%",
                                             style: TextStyle(
                                                 color: Colors.blue,
                                                 fontSize: 20),

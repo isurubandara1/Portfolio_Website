@@ -67,6 +67,16 @@ flutter:
     - assets/flutter.png
     - assets/git.png
     - assets/github.png
+    - assets/Recycle/R1.png
+    - assets/Recycle/R2.png
+    - assets/Recycle/R3.png
+    - assets/Recycle/R4.png
+    - assets/Recycle/R5.png
+    - assets/Recycle/R6.png
+    - assets/Recycle/R7.png
+    - assets/Recycle/R8.png
+    - assets/Recycle/R9.png
+    - assets/Recycle/R10.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
