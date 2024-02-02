@@ -40,7 +40,7 @@ class Protfolio extends StatelessWidget {
                           height: 20,
                         ),
                         Text(
-                          "If you have excess materials such as glass, metal, plastic, and so on, using this app,\nyou can inform us and request their removal. \nOur services will come and collect these materials, \nand you can receive a certain amount based on the weight of the materials. \nSo come forward to know about those amounts. \nWe are hoping for your support to help beautify our environment.",
+                          "If you have excess materials such as glass, metal, plastic, and so on, using this app,\nyou can inform us and request their removal. Our services will come and collect these materials, \nand you can receive a certain amount based on the weight of the materials. \nSo come forward to know about those amounts. \nWe are hoping for your support to help beautify our environment.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
@@ -78,7 +78,17 @@ class Protfolio extends StatelessWidget {
             ),
 
             //second row
-            SizedBox(height: 10),
+            SizedBox(height: 5),
+
+            Padding(
+              padding: const EdgeInsets.only(left: 40, right: 40),
+              child: Container(
+                width: double.infinity,
+                height: 4,
+                color: Colors.blue,
+              ),
+            ),
+            SizedBox(height: 5),
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -88,19 +98,19 @@ class Protfolio extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     //
-                    AutoScrollImages(),
+                    AutoScrollMaths(),
 
                     Column(
                       children: [
                         Text(
-                          "Recycling App ",
+                          "MathsTriks App",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
                         SizedBox(
                           height: 20,
                         ),
                         Text(
-                          "If you have excess materials such as glass, metal, plastic, and so on, using this app,\nyou can inform us and request their removal. \nOur services will come and collect these materials, \nand you can receive a certain amount based on the weight of the materials. \nSo come forward to know about those amounts. \nWe are hoping for your support to help beautify our environment.",
+                          "With this MathsTriks App, students can discover solutions for various mathematical problems,\n including fractions, straight lines, area, perimeter, and more.\nWhen users input data into the app, \nit promptly generates answers for specific questions.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
@@ -137,8 +147,19 @@ class Protfolio extends StatelessWidget {
               ),
             ),
 
+            SizedBox(height: 5),
+
+            Padding(
+              padding: const EdgeInsets.only(left: 40, right: 40),
+              child: Container(
+                width: double.infinity,
+                height: 4,
+                color: Colors.blue,
+              ),
+            ),
+            SizedBox(height: 5),
+
             //Thired row
-            SizedBox(height: 10),
 
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -263,6 +284,73 @@ class _AutoScrollImagesState extends State<AutoScrollImages> {
             itemBuilder: (BuildContext context, int index) {
               return Image.asset(
                 "assets/Recycle/${imageUrls[index]}",
+                fit: BoxFit.contain,
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+// Two Animation for Maths
+class AutoScrollMaths extends StatefulWidget {
+  const AutoScrollMaths({super.key});
+
+  @override
+  _AutoScrollMathsState createState() => _AutoScrollMathsState();
+}
+
+class _AutoScrollMathsState extends State<AutoScrollMaths> {
+  final List<String> imageUrls = [
+    "m1.png",
+    "m2.png",
+    "m3.png",
+    "m4.png",
+    "m5.png",
+    "m6.png",
+    "m7.png",
+  ];
+
+  final PageController _controller = PageController();
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(seconds: 4), (Timer timer) {
+      if (_controller.page == imageUrls.length - 1) {
+        _controller.animateToPage(0,
+            duration: const Duration(milliseconds: 2000),
+            curve: Curves.bounceOut);
+      } else {
+        _controller.nextPage(
+            duration: Duration(milliseconds: 2000), curve: Curves.ease);
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          height: 500,
+          width: 600,
+          child: PageView.builder(
+            controller: _controller,
+            itemCount: imageUrls.length,
+            itemBuilder: (BuildContext context, int index) {
+              return Image.asset(
+                "assets/Maths/${imageUrls[index]}",
                 fit: BoxFit.contain,
               );
             },

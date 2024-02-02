@@ -77,6 +77,13 @@ flutter:
     - assets/Recycle/R8.png
     - assets/Recycle/R9.png
     - assets/Recycle/R10.png
+    - assets/Maths/m1.png
+    - assets/Maths/m2.png
+    - assets/Maths/m3.png
+    - assets/Maths/m4.png
+    - assets/Maths/m5.png
+    - assets/Maths/m6.png
+    - assets/Maths/m7.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
