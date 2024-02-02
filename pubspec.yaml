@@ -67,6 +67,7 @@ flutter:
     - assets/flutter.png
     - assets/git.png
     - assets/github.png
+    - assets/pCover.png
     - assets/Recycle/R1.png
     - assets/Recycle/R2.png
     - assets/Recycle/R3.png
@@ -84,6 +85,20 @@ flutter:
     - assets/Maths/m5.png
     - assets/Maths/m6.png
     - assets/Maths/m7.png
+    - assets/Endamic/e1.png
+    - assets/Endamic/e1.png
+    - assets/Endamic/e2.png
+    - assets/Endamic/e3.png
+    - assets/Endamic/e4.png
+    - assets/Endamic/e5.png
+    - assets/Endamic/e6.png
+    - assets/Endamic/e7.png
+    - assets/Endamic/e8.png
+    - assets/Endamic/e9.png
+    - assets/RandomUser/u1.png
+    - assets/RandomUser/u2.png
+    - assets/RandomUser/u3.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
