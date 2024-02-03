@@ -1,10 +1,8 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:protfolio/About.dart';
 import 'package:protfolio/Home.dart';
 import 'package:protfolio/Service.dart';
-
 import 'Protfolio.dart';
 
 Widget Navbar(BuildContext context) {
@@ -87,6 +85,130 @@ Widget Navbar(BuildContext context) {
           child: const Text("Contact"),
         ),
       ],
+    ),
+  );
+}
+
+Widget lineSpace(BuildContext context, double height) {
+  return Container(
+    color: Colors.black,
+    height: height,
+    child: Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/flutter.png",
+            width: 40,
+            height: 30,
+          ),
+          Image.asset(
+            "assets/firebase.png",
+            width: 30,
+            height: 30,
+          ),
+        ],
+      ),
     ),
   );
 }

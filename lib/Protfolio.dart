@@ -13,11 +13,9 @@ class Protfolio extends StatelessWidget {
           Navbar(context),
 
           // Cover Image
-          Image.asset(
-            "assets/pCover.png",
-            width: double.infinity,
-            height: 100,
-            fit: BoxFit.fill,
+          Container(
+            height: 50,
+            color: Colors.amber,
           ),
 
           // Content
@@ -66,16 +64,14 @@ class Protfolio extends StatelessWidget {
                             ElevatedButton(
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.blue,
+                                  primary: Colors.black12,
                                   onPrimary: Colors.white,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50.0),
                                     side: BorderSide(
-                                        color: const Color.fromARGB(
-                                            255, 17, 17, 17),
-                                        width: 5.0),
+                                        color: Colors.blue, width: 2.0),
                                   ),
-                                  minimumSize: Size(60, 60),
+                                  minimumSize: Size(50, 50),
                                 ),
                                 child: Image.asset(
                                   "assets/github.png",
@@ -88,127 +84,7 @@ class Protfolio extends StatelessWidget {
                   ],
                 ),
 
-                Container(
-                  color: Colors.black,
-                  height: 30,
-                  child: Center(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/flutter.png",
-                          width: 40,
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/firebase.png",
-                          width: 30,
-                          height: 30,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                lineSpace(context, 30),
 
                 //Second
                 Row(
@@ -268,6 +144,8 @@ class Protfolio extends StatelessWidget {
                     ),
                   ],
                 ),
+
+                lineSpace(context, 30),
 
                 //Thired
                 Row(
@@ -330,6 +208,8 @@ class Protfolio extends StatelessWidget {
                   ],
                 ),
 
+                lineSpace(context, 30),
+
                 //Forth
                 Row(
                   children: [
@@ -353,7 +233,7 @@ class Protfolio extends StatelessWidget {
                           height: 20,
                         ),
                         Text(
-                          "When the floating action button is clicked, \nrandom users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
+                          "When the button is clicked,random users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
@@ -387,6 +267,8 @@ class Protfolio extends StatelessWidget {
                     ),
                   ],
                 ),
+
+                lineSpace(context, 30),
 
                 //Five
                 Row(
