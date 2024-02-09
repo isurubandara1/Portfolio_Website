@@ -68,6 +68,8 @@ flutter:
     - assets/git.png
     - assets/github.png
     - assets/pCover.png
+    - assets/linkdin.png
+    - assets/stackflow.png
     - assets/Recycle/R1.png
     - assets/Recycle/R2.png
     - assets/Recycle/R3.png

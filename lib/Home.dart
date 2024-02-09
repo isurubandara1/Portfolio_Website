@@ -146,7 +146,53 @@ class _AnimatedContentState extends State<AnimatedContent>
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 5,
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.only(left: 0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            icon: Image.asset(
+                              "assets/linkdin.png",
+                              fit: BoxFit.fill,
+                              width: 27,
+                            ),
+                            onPressed: () {
+                              // Handle LinkedIn button press
+                            },
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          IconButton(
+                            icon: Image.asset(
+                              "assets/github.png",
+                              fit: BoxFit.fill,
+                              width: 40,
+                            ),
+                            onPressed: () {
+                              // Handle GitHub button press
+                            },
+                          ),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          IconButton(
+                            icon: Image.asset(
+                              "assets/stackflow.png",
+                              fit: BoxFit.fill,
+                              width: 38,
+                            ),
+                            onPressed: () {
+                              // Handle Stack Overflow button press
+                            },
+                          ),
+                        ],
+                      )),
+                  SizedBox(
+                    height: 10,
                   ),
                   Row(
                     children: [
