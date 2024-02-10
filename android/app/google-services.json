@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "388155472247",
+    "project_id": "protfolio-3f81e",
+    "storage_bucket": "protfolio-3f81e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388155472247:android:0a34abcf4cb980a69ac972",
+        "android_client_info": {
+          "package_name": "com.example.protfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn-zWtjt63Scb9uhZ8MkmshAUg_Acm_j4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

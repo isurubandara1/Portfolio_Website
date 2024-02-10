@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:protfolio/Common.dart';
+import 'package:protfolio/contact.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
@@ -201,7 +202,12 @@ class _AnimatedContentState extends State<AnimatedContent>
                   Row(
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Contact()),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           primary: Colors.blue,
                           onPrimary: Colors.white,

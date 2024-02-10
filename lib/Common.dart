@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:protfolio/About.dart';
 import 'package:protfolio/Home.dart';
 import 'package:protfolio/Service.dart';
+import 'package:protfolio/contact.dart';
 import 'Protfolio.dart';
 
 Widget Navbar(BuildContext context) {
@@ -73,7 +74,12 @@ Widget Navbar(BuildContext context) {
         ),
         const SizedBox(width: 40),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Contact()),
+            );
+          },
           style: ElevatedButton.styleFrom(
             primary: Colors.black12,
             onPrimary: Colors.white,
