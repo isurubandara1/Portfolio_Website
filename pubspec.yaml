@@ -40,6 +40,7 @@ dependencies:
   cloud_firestore: ^4.15.4
   firebase_auth: ^4.17.4
   flutter_dotenv: ^5.0.2
+  flutter_email_sender: ^6.0.2
 
 dev_dependencies:
   flutter_test:
@@ -105,6 +106,7 @@ flutter:
     - assets/RandomUser/u1.png
     - assets/RandomUser/u2.png
     - assets/RandomUser/u3.png
+   
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

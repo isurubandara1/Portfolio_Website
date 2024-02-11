@@ -1,5 +1,8 @@
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import "package:flutter/material.dart";
+import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'dart:html' as html; // Import dart:html for web compatibility
 import 'Common.dart';
 
 class Contact extends StatefulWidget {
@@ -14,17 +17,61 @@ class _ContactState extends State<Contact> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController messageController = TextEditingController();
 
+  Future<void> sendEmail() async {
+    // Use flutter_email_sender only for mobile platforms
+    if (defaultTargetPlatform == TargetPlatform.android ||
+        defaultTargetPlatform == TargetPlatform.iOS) {
+      final Email email = Email(
+        body:
+            'Name: ${nameController.text}\nEmail: ${emailController.text}\nMessage: ${messageController.text}',
+        subject: 'Contact Form Submission',
+        recipients: [
+          'isurumbandara@gmail.com'
+        ], // Replace with your default email address
+        isHTML: false,
+      );
+
+      try {
+        await FlutterEmailSender.send(email);
+        _showDialog('Success', 'Email sent successfully!', Colors.green);
+      } catch (error) {
+        print('Error sending email: $error');
+        _showDialog('Error', 'Failed to send email!', Colors.red);
+      }
+    } else {
+      // For web, open the Gmail inbox directly with pre-filled values
+      final String to = 'isurumbandara@gmail.com';
+      final String subject = Uri.encodeComponent(nameController.text);
+      final String body = Uri.encodeComponent(messageController.text);
+
+      final String gmailUrl =
+          'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=$to&su=$subject&body=$body';
+
+      html.window.open(gmailUrl, '_blank');
+      // _showDialog('Success', 'Sent your Gmail successfully!', Colors.green);
+    }
+  }
+
   Future<void> saveData() async {
     if (_validateFields()) {
       CollectionReference contacts =
           FirebaseFirestore.instance.collection('contacts');
-      await contacts.add({
-        'name': nameController.text,
-        'email': emailController.text,
-        'message': messageController.text,
-      });
+      try {
+        await contacts.add({
+          'name': nameController.text,
+          'email': emailController.text,
+          'message': messageController.text,
+        });
 
-      _showDialog('Success', 'Data saved successfully!', Colors.green);
+        // Send email after saving data to Firestore
+        await sendEmail();
+
+        _showDialog('Success', 'Data saved and Sent your Gmail successfully!',
+            Colors.green);
+      } catch (error) {
+        print('Error saving data to Firestore: $error');
+        _showDialog('Error', 'Failed to save data to Firestore!', Colors.red);
+      }
 
       setState(() {
         nameController.clear();
