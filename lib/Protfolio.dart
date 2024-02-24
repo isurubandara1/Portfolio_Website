@@ -13,10 +13,10 @@ class Protfolio extends StatelessWidget {
           Navbar(context),
 
           // Cover Image
-          Container(
-            height: 50,
-            color: Colors.amber,
-          ),
+          // Container(
+          //   height: 50,
+          //   color: Colors.black,
+          // ),
 
           // Content
           Expanded(
@@ -173,7 +173,7 @@ class Protfolio extends StatelessWidget {
                           height: 20,
                         ),
                         Text(
-                          "This app has been showcased a wide range of native endemic animals \nfound across continents worldwide. \nThe application is designed to be highly user-friendly \nand is compatible with both Android and iOS platforms.\n Users can acquire valuable knowledge about various animals by referring to this app.",
+                          "This app has been showcased a wide range of native endemic animals across worldwide. \nThe application is designed to be highly user-friendly \nand is compatible with both Android and iOS platforms.\n Users can acquire valuable knowledge about various animals by referring to this app.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
@@ -213,27 +213,28 @@ class Protfolio extends StatelessWidget {
                 //Forth
                 Row(
                   children: [
-                    AutoScrollRandom(
+                    AutoScrollNews(
                       imageUrls: [
-                        "u1.png",
-                        "u2.png",
-                        "u3.png",
-                        "u1.png",
-                        "u2.png",
-                        "u3.png",
+                        "n1.png",
+                        "n2.png",
+                        "n3.png",
+                        "n4.png",
+                        "n5.png",
+                        "n6.png",
+                        "n7.png",
                       ],
                     ),
                     Column(
                       children: [
                         Text(
-                          "Random Users API",
+                          "News App ",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
                         SizedBox(
                           height: 20,
                         ),
                         Text(
-                          "When the button is clicked,random users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
+                          "This Flutter application is a simple yet powerful news app \nthat allows users to stay updated with the latest news from various sources. \nIt fetches news data from a News API and presents it in a clean and intuitive user interface.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
@@ -273,28 +274,27 @@ class Protfolio extends StatelessWidget {
                 //Five
                 Row(
                   children: [
-                    AutoScrollMaths(
+                    AutoScrollRandom(
                       imageUrls: [
-                        "m1.png",
-                        "m2.png",
-                        "m3.png",
-                        "m4.png",
-                        "m5.png",
-                        "m6.png",
-                        "m7.png",
+                        "u1.png",
+                        "u2.png",
+                        "u3.png",
+                        "u1.png",
+                        "u2.png",
+                        "u3.png",
                       ],
                     ),
                     Column(
                       children: [
                         Text(
-                          "Recycling App ",
+                          "Random Users API",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
                         SizedBox(
                           height: 20,
                         ),
                         Text(
-                          "If you have excess materials such as glass, metal, plastic, and so on, using this app,\nyou can inform us and request their removal. Our services will come and collect these materials, \nand you can receive a certain amount based on the weight of the materials. \nSo come forward to know about those amounts. \nWe are hoping for your support to help beautify our environment.",
+                          "When the button is clicked,random users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
@@ -571,6 +571,66 @@ class _AutoScrollEndamicState extends State<AutoScrollEndamic> {
 }
 
 //Forth
+class AutoScrollNews extends StatefulWidget {
+  final List<String> imageUrls;
+
+  const AutoScrollNews({required this.imageUrls, Key? key}) : super(key: key);
+
+  @override
+  _AutoScrollNewsState createState() => _AutoScrollNewsState();
+}
+
+class _AutoScrollNewsState extends State<AutoScrollNews> {
+  final PageController _controller = PageController();
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(seconds: 4), (Timer timer) {
+      if (_controller.page == widget.imageUrls.length - 1) {
+        _controller.animateToPage(
+          0,
+          duration: const Duration(milliseconds: 2000),
+          curve: Curves.bounceOut,
+        );
+      } else {
+        _controller.nextPage(
+          duration: Duration(milliseconds: 2000),
+          curve: Curves.ease,
+        );
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 500,
+      width: 600,
+      child: PageView.builder(
+        controller: _controller,
+        itemCount: widget.imageUrls.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Image.asset(
+            "assets/News/${widget.imageUrls[index]}",
+            fit: BoxFit.contain,
+          );
+        },
+      ),
+    );
+  }
+}
+
+//Fiveth
+
 class AutoScrollRandom extends StatefulWidget {
   final List<String> imageUrls;
 
