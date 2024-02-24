@@ -25,7 +25,7 @@ class Protfolio extends StatelessWidget {
                 // First Row
                 Row(
                   children: [
-                    AutoScrollImages(
+                    const AutoScrollImages(
                       imageUrls: [
                         "R1.png",
                         "R2.png",
@@ -41,24 +41,24 @@ class Protfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           "Recycling App ",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text(
+                        const Text(
                           "If you have excess materials such as glass, metal, plastic, and so on, using this app,\nyou can inform us and request their removal. Our services will come and collect these materials, \nand you can receive a certain amount based on the weight of the materials. \nSo come forward to know about those amounts. \nWe are hoping for your support to help beautify our environment.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             ElevatedButton(
@@ -68,7 +68,7 @@ class Protfolio extends StatelessWidget {
                                   onPrimary: Colors.white,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Colors.blue, width: 2.0),
                                   ),
                                   minimumSize: Size(50, 50),
@@ -89,7 +89,7 @@ class Protfolio extends StatelessWidget {
                 //Second
                 Row(
                   children: [
-                    AutoScrollMaths(
+                    const AutoScrollMaths(
                       imageUrls: [
                         "m1.png",
                         "m2.png",
@@ -102,24 +102,24 @@ class Protfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           "MathsTriks App",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text(
+                        const Text(
                           "With this Mobile application, students can discover solutions for various mathematical problems,\n including fractions, straight lines, area, perimeter, and more. \nWhen users input data into the app, \nit promptly generates answers for specific questions.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             ElevatedButton(
@@ -150,7 +150,7 @@ class Protfolio extends StatelessWidget {
                 //Thired
                 Row(
                   children: [
-                    AutoScrollEndamic(
+                    const AutoScrollEndamic(
                       imageUrls: [
                         "e1.png",
                         "e2.png",
