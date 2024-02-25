@@ -125,9 +125,9 @@ class _ContactState extends State<Contact> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     RichText(
-                      text: TextSpan(
+                      text: const TextSpan(
                         style: TextStyle(color: Colors.white, fontSize: 25),
                         children: [
                           TextSpan(
@@ -143,23 +143,23 @@ class _ContactState extends State<Contact> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Padding(
                       padding: const EdgeInsets.only(left: 200, right: 200),
                       child: TextField(
                         controller: nameController,
                         //autofocus: true,
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.blue,
                               width: 20,
                             ),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.blue,
                               width: 2.0,
                             ),
@@ -167,29 +167,29 @@ class _ContactState extends State<Contact> {
                           ),
                           hintText: "Enter your name",
                           labelText: "Name",
-                          hintStyle:
-                              TextStyle(color: Colors.white, fontSize: 12),
-                          labelStyle:
-                              TextStyle(color: Colors.white, fontSize: 12),
+                          hintStyle: const TextStyle(
+                              color: Colors.white, fontSize: 12),
+                          labelStyle: const TextStyle(
+                              color: Colors.white, fontSize: 12),
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Padding(
                       padding: const EdgeInsets.only(left: 200, right: 200),
                       child: TextField(
                         controller: emailController,
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.blue,
                               width: 20,
                             ),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.blue,
                               width: 2.0,
                             ),
@@ -197,30 +197,30 @@ class _ContactState extends State<Contact> {
                           ),
                           hintText: "Enter your email",
                           labelText: "Email Address",
-                          hintStyle:
-                              TextStyle(color: Colors.white, fontSize: 12),
-                          labelStyle:
-                              TextStyle(color: Colors.white, fontSize: 12),
+                          hintStyle: const TextStyle(
+                              color: Colors.white, fontSize: 12),
+                          labelStyle: const TextStyle(
+                              color: Colors.white, fontSize: 12),
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Padding(
                       padding: const EdgeInsets.only(left: 200, right: 200),
                       child: TextField(
                         controller: messageController,
-                        style: TextStyle(color: Colors.white),
+                        style: const TextStyle(color: Colors.white),
                         maxLines: 7,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.blue,
                               width: 20,
                             ),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.blue,
                               width: 2.0,
                             ),
@@ -228,14 +228,14 @@ class _ContactState extends State<Contact> {
                           ),
                           hintText: "Enter your Message",
                           labelText: "Write Message Here...",
-                          hintStyle:
-                              TextStyle(color: Colors.white, fontSize: 12),
-                          labelStyle:
-                              TextStyle(color: Colors.white, fontSize: 12),
+                          hintStyle: const TextStyle(
+                              color: Colors.white, fontSize: 12),
+                          labelStyle: const TextStyle(
+                              color: Colors.white, fontSize: 12),
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     ElevatedButton(
                       onPressed: () {
                         saveData();
@@ -245,13 +245,14 @@ class _ContactState extends State<Contact> {
                         onPrimary: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(7.0),
-                          side: BorderSide(color: Colors.blue, width: 2.0),
+                          side:
+                              const BorderSide(color: Colors.blue, width: 2.0),
                         ),
-                        minimumSize: Size(120, 60),
+                        minimumSize: const Size(120, 60),
                       ),
                       child: const Text("Submit"),
                     ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                   ],
                 ),
               ),

@@ -14,7 +14,7 @@ Widget Navbar(BuildContext context) {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const SizedBox(width: 40),
-        Text(
+        const Text(
           "< 𝕴𝖘𝖚𝖗𝖚 >",
           style: TextStyle(
               fontSize: 25, fontWeight: FontWeight.bold, color: Colors.blue),

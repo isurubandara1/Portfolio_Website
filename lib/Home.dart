@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
             // NavBar
 
             Navbar(context),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
 
@@ -96,15 +96,15 @@ class _AnimatedContentState extends State<AnimatedContent>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "👋🏻 𝗛𝗶, 𝗧𝗵𝗲𝗿𝗲!",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
                   RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                       style: TextStyle(color: Colors.white, fontSize: 16),
                       children: [
                         TextSpan(
@@ -126,10 +126,10 @@ class _AnimatedContentState extends State<AnimatedContent>
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "Flutter Mobile App Developer with a passion for creating seamless digital experiences.",
                     textAlign: TextAlign.start,
                     style: TextStyle(
@@ -138,7 +138,7 @@ class _AnimatedContentState extends State<AnimatedContent>
                       fontSize: 15,
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Excited about the future of mobile tech, let's connect and bring your app ideas to life!",
                     textAlign: TextAlign.start,
                     style: TextStyle(
@@ -147,7 +147,7 @@ class _AnimatedContentState extends State<AnimatedContent>
                       fontSize: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Padding(
@@ -166,7 +166,7 @@ class _AnimatedContentState extends State<AnimatedContent>
                                 'https://www.linkedin.com/in/isuru-bandara-b51aab244/');
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         IconButton(
@@ -179,7 +179,7 @@ class _AnimatedContentState extends State<AnimatedContent>
                             _launchURL('https://github.com/isurubandara1');
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         IconButton(
@@ -196,7 +196,7 @@ class _AnimatedContentState extends State<AnimatedContent>
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
@@ -213,13 +213,14 @@ class _AnimatedContentState extends State<AnimatedContent>
                           onPrimary: Colors.white,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(7.0),
-                            side: BorderSide(color: Colors.blue, width: 2.0),
+                            side: const BorderSide(
+                                color: Colors.blue, width: 2.0),
                           ),
                           minimumSize: Size(120, 60),
                         ),
                         child: const Text("Contact"),
                       ),
-                      SizedBox(width: 16),
+                      const SizedBox(width: 16),
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -227,7 +228,8 @@ class _AnimatedContentState extends State<AnimatedContent>
                           onPrimary: Colors.white,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(7.0),
-                            side: BorderSide(color: Colors.blue, width: 2.0),
+                            side: const BorderSide(
+                                color: Colors.blue, width: 2.0),
                           ),
                           minimumSize: Size(120, 60),
                         ),
@@ -241,13 +243,13 @@ class _AnimatedContentState extends State<AnimatedContent>
           ),
 
           // Spacer
-          SizedBox(width: 16),
+          const SizedBox(width: 16),
 
           // Profile image
           SlideTransition(
             position: _imageOffsetAnimation,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 // border: Border.all(
                 //    color: Colors.blue,
