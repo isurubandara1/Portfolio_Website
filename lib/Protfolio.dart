@@ -129,7 +129,7 @@ class Protfolio extends StatelessWidget {
                                   onPrimary: Colors.white,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Colors.blue, width: 2.0),
                                   ),
                                   minimumSize: Size(50, 50),
@@ -165,24 +165,24 @@ class Protfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           "Endemic Animals App",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text(
+                        const Text(
                           "This app has been showcased a wide range of native endemic animals across worldwide. \nThe application is designed to be highly user-friendly \nand is compatible with both Android and iOS platforms.\n Users can acquire valuable knowledge about various animals by referring to this app.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             ElevatedButton(
@@ -192,7 +192,7 @@ class Protfolio extends StatelessWidget {
                                   onPrimary: Colors.white,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Colors.blue, width: 2.0),
                                   ),
                                   minimumSize: Size(50, 50),
@@ -213,7 +213,7 @@ class Protfolio extends StatelessWidget {
                 //Forth
                 Row(
                   children: [
-                    AutoScrollNews(
+                    const AutoScrollNews(
                       imageUrls: [
                         "n1.png",
                         "n2.png",
@@ -226,24 +226,24 @@ class Protfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           "News App ",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text(
+                        const Text(
                           "This Flutter application is a simple yet powerful news app \nthat allows users to stay updated with the latest news from various sources. \nIt fetches news data from a News API and presents it in a clean and intuitive user interface.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             ElevatedButton(
@@ -253,7 +253,7 @@ class Protfolio extends StatelessWidget {
                                   onPrimary: Colors.white,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Colors.blue, width: 2.0),
                                   ),
                                   minimumSize: Size(50, 50),
@@ -274,7 +274,7 @@ class Protfolio extends StatelessWidget {
                 //Five
                 Row(
                   children: [
-                    AutoScrollRandom(
+                    const AutoScrollRandom(
                       imageUrls: [
                         "u1.png",
                         "u2.png",
@@ -286,24 +286,24 @@ class Protfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Text(
+                        const Text(
                           "Random Users API",
                           style: TextStyle(color: Colors.white, fontSize: 30),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Text(
+                        const Text(
                           "When the button is clicked,random users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
                           textAlign: TextAlign.center,
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             ElevatedButton(
@@ -313,7 +313,7 @@ class Protfolio extends StatelessWidget {
                                   onPrimary: Colors.white,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(50.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Colors.blue, width: 2.0),
                                   ),
                                   minimumSize: Size(50, 50),
