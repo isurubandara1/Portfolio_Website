@@ -73,13 +73,13 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 50,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           SlideTransition(
                             position: Tween<Offset>(
                               begin: Offset(-2.0, 0.0),
@@ -93,7 +93,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                               padding: const EdgeInsets.only(left: 1),
                               child: RichText(
                                 textAlign: TextAlign.center,
-                                text: TextSpan(
+                                text: const TextSpan(
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 35,
@@ -115,7 +115,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                               ),
                             ),
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           SlideTransition(
                             position: Tween<Offset>(
                               begin: Offset(0.0, -1.0),
@@ -125,7 +125,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                               curve:
                                   Interval(0.5, 1.0, curve: Curves.easeInOut),
                             )),
-                            child: SelectableText.rich(
+                            child: const SelectableText.rich(
                               TextSpan(
                                 style: TextStyle(
                                     color: Colors.white, fontSize: 16),
@@ -155,46 +155,41 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                               textAlign: TextAlign.center,
                             ),
                           ),
-                          SizedBox(height: 30),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(left: 80, bottom: 10),
+                          const SizedBox(height: 30),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 80, bottom: 10),
                             child: SelectableText(
                               "Email   :  isurumbandara@gmail.com",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 16),
                             ),
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(left: 80, bottom: 20),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 80, bottom: 20),
                             child: SelectableText(
                               "Phone  :  +94 704394554  / +94 761210812",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 16),
                             ),
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(left: 80, bottom: 10),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 80, bottom: 10),
                             child: SelectableText(
                               "Skills  :  Flutter , Firebase , Git , Github ",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 16),
                             ),
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(left: 80, bottom: 10),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 80, bottom: 10),
                             child: SelectableText(
                               "Education  : BSc. Honours Degree in Computing & Information Systems",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 16),
                             ),
                           ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.only(left: 80, bottom: 30),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 80, bottom: 30),
                             child: SelectableText(
                               "Experience  :   1 year",
                               style:
@@ -219,7 +214,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                   onPrimary: Colors.white,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(7.0),
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         color: Colors.blue, width: 2.0),
                                   ),
                                   minimumSize: Size(120, 60),
