@@ -46,7 +46,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
             child: Container(
               height: double.infinity,
               width: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/cover.jpg'),
                   fit: BoxFit.cover,
@@ -58,7 +58,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                     // NavBar
                     Navbar(context),
 
-                    SizedBox(
+                    const SizedBox(
                       height: 50,
                     ),
 
@@ -74,7 +74,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                             color: Colors.black87,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
-                          child: SingleChildScrollView(
+                          child: const SingleChildScrollView(
                             child: Column(
                               children: [
                                 SizedBox(
@@ -121,7 +121,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Container(
@@ -143,8 +143,8 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         width: 90,
                                         height: 90,
                                       ),
-                                      SizedBox(width: 10),
-                                      Text(
+                                      const SizedBox(width: 10),
+                                      const Text(
                                         "Excellent    90%",
                                         style: TextStyle(
                                             color: Colors.blue, fontSize: 20),
@@ -159,15 +159,15 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         width: 90,
                                         height: 90,
                                       ),
-                                      SizedBox(width: 10),
-                                      Text(
+                                      const SizedBox(width: 10),
+                                      const Text(
                                         "Excellent    85%",
                                         style: TextStyle(
                                             color: Colors.blue, fontSize: 20),
                                       ),
                                     ],
                                   ),
-                                  SizedBox(height: 5),
+                                  const SizedBox(height: 5),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 10),
                                     child: Row(
@@ -177,8 +177,8 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           width: 80,
                                           height: 80,
                                         ),
-                                        SizedBox(width: 10),
-                                        Text(
+                                        const SizedBox(width: 10),
+                                        const Text(
                                           "Excellent    60%",
                                           style: TextStyle(
                                               color: Colors.blue, fontSize: 20),
@@ -186,7 +186,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 20),
+                                  const SizedBox(height: 20),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 30),
                                     child: Row(
@@ -196,8 +196,8 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           width: 45,
                                           height: 45,
                                         ),
-                                        SizedBox(width: 10),
-                                        Padding(
+                                        const SizedBox(width: 10),
+                                        const Padding(
                                           padding:
                                               const EdgeInsets.only(left: 15),
                                           child: Text(
@@ -210,7 +210,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 30),
+                                  const SizedBox(height: 30),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 25),
                                     child: Row(
@@ -220,8 +220,8 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           width: 60,
                                           height: 60,
                                         ),
-                                        SizedBox(width: 10),
-                                        Padding(
+                                        const SizedBox(width: 10),
+                                        const Padding(
                                           padding:
                                               const EdgeInsets.only(left: 5),
                                           child: Text(
@@ -234,7 +234,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 5),
+                                  const SizedBox(height: 5),
                                 ]),
                           ),
                         ),

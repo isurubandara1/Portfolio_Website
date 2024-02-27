@@ -342,21 +342,21 @@ class Protfolio extends StatelessWidget {
       child: Column(
         children: [
           autoScrollWidget,
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Text(
             title,
-            style: TextStyle(color: Colors.white, fontSize: 30),
+            style: const TextStyle(color: Colors.white, fontSize: 30),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Text(
             description,
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white, fontSize: 15),
+            style: const TextStyle(color: Colors.white, fontSize: 15),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Row(
             children: [
-              SizedBox(width: 20),
+              const SizedBox(width: 20),
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
