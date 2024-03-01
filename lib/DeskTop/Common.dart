@@ -1,9 +1,9 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:protfolio/About.dart';
-import 'package:protfolio/Home.dart';
-import 'package:protfolio/Service.dart';
-import 'package:protfolio/contact.dart';
+import 'package:protfolio/DeskTop/About.dart';
+import 'Service.dart';
+import 'Contact.dart';
+import 'Home.dart';
 import 'Protfolio.dart';
 
 Widget Navbar(BuildContext context) {

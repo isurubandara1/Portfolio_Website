@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:protfolio/Common.dart';
-import 'package:protfolio/contact.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import 'Common.dart';
+import 'Contact.dart';
 
 class HomePage extends StatelessWidget {
   @override
