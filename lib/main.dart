@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'DeskTop/Home.dart';
+import 'Mobile/Mhome.dart';
 import 'Secret.dart';
 import 'package:device_preview/device_preview.dart';
 
@@ -44,3 +45,23 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: LayoutBuilder(
+//         builder: (context, constraints) {
+//           if (constraints.maxWidth > 700) {
+//             // Display Desktop version for widths greater than 600
+//             return HomePage();
+//           } else {
+//             // Display Mobile version for widths less than or equal to 600
+//             return Mhome();
+//           }
+//         },
+//       ),
+//     );
+//   }
+// }
