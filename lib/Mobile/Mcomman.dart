@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../PageRouter.dart';
+import 'Mabout.dart';
+
 Widget buildDrawer(BuildContext context) {
   return Drawer(
     child: ListView(
@@ -42,8 +45,10 @@ Widget buildDrawer(BuildContext context) {
                 fontStyle: FontStyle.italic),
           ),
           onTap: () {
-            // Handle item 2 tap
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => AboutP()),
+            );
           },
         ),
         SizedBox(
@@ -74,8 +79,10 @@ Widget buildDrawer(BuildContext context) {
                 fontStyle: FontStyle.italic),
           ),
           onTap: () {
-            // Handle item 2 tap
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Servicep()),
+            );
           },
         ),
         SizedBox(

@@ -38,8 +38,8 @@ class Mhome extends StatelessWidget {
               // Add the Image widget here
               Center(
                 child: Container(
-                  width: 400,
-                  height: 400,
+                  width: 350,
+                  height: 420,
                   // width: MediaQuery.of(context).size.width - 100,
                   // height: MediaQuery.of(context).size.height / 2,
                   child: Image.asset(
@@ -81,7 +81,7 @@ class Mhome extends StatelessWidget {
                 height: 15,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 10, right: 10),
+                padding: const EdgeInsets.only(left: 15, right: 15),
                 child: Text(
                   "Flutter Mobile App Developer with a passion for creating seamless digital experiences. Excited about the future of mobile tech, let's connect and bring your app ideas to life!",
                   textAlign: TextAlign.center,
