@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:protfolio/DeskTop/About.dart';
+import '../PageRouter.dart';
 import 'Service.dart';
 import 'Contact.dart';
 import 'Home.dart';
@@ -50,7 +51,7 @@ Widget Navbar(BuildContext context) {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Service()),
+              MaterialPageRoute(builder: (context) => Servicep()),
             );
           },
           child: const Text(
