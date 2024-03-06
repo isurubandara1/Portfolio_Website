@@ -29,8 +29,10 @@ Widget buildDrawer(BuildContext context) {
                 fontStyle: FontStyle.italic),
           ),
           onTap: () {
-            // Handle item 1 tap
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Home()),
+            );
           },
         ),
         SizedBox(

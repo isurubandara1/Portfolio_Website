@@ -60,7 +60,22 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                     Navbar(context),
 
                     const SizedBox(
-                      height: 50,
+                      height: 10,
+                    ),
+
+                    //My services
+                    Center(
+                      child: Text(
+                        "My Services  💼 🌐 📱",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
                     ),
 
                     // Content
