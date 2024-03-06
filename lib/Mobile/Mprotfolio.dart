@@ -188,4 +188,61 @@ class Protfolio extends StatelessWidget {
 
                 lineSpace(context, 30),
 
-              
+                //Forth
+                Column(
+                  children: [
+                    const Text(
+                            "News App ",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                    const AutoScrollNews(
+                      imageUrls: [
+                        "n1.png",
+                        "n2.png",
+                        "n3.png",
+                        "n4.png",
+                        "n5.png",
+                        "n6.png",
+                        "n7.png",
+                      ],
+                    ),
+                     Column(
+                        children: [
+                          
+                          const Text(
+                            "This Flutter application is a simple yet powerful news app \nthat allows users to stay updated with the latest news from various sources. \nIt fetches news data from a News API and presents it in a clean and intuitive user interface.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.black12,
+                                onPrimary: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(50.0),
+                                  side: const BorderSide(
+                                      color: Colors.blue, width: 2.0),
+                                ),
+                                minimumSize: Size(50, 50),
+                              ),
+                              child: Image.asset(
+                                "assets/github.png",
+                                width: 30,
+                              )),
+                        ],
+                      ),
+                   
+                  ],
+                ),
+
+                lineSpace(context, 30),
+
+                //Five
+            
