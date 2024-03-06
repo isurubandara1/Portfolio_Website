@@ -129,3 +129,63 @@ class Protfolio extends StatelessWidget {
                 ),
 
                 lineSpace(context, 30),
+
+                //Thired
+                Column(
+                  children: [
+                    const Text(
+                            "Endemic Animals App",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                    const AutoScrollEndamic(
+                      imageUrls: [
+                        "e1.png",
+                        "e2.png",
+                        "e3.png",
+                        "e4.png",
+                        "e5.png",
+                        "e6.png",
+                        "e7.png",
+                        "e8.png",
+                        "e9.png",
+                      ],
+                    ),
+                     Column(
+                        children: [
+                          
+                          const Text(
+                            "This app has been showcased a wide range of native endemic animals across worldwide. \nThe application is designed to be highly user-friendly \nand is compatible with both Android and iOS platforms.\n Users can acquire valuable knowledge about various animals by referring to this app.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.black12,
+                                onPrimary: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(50.0),
+                                  side: const BorderSide(
+                                      color: Colors.blue, width: 2.0),
+                                ),
+                                minimumSize: Size(50, 50),
+                              ),
+                              child: Image.asset(
+                                "assets/github.png",
+                                width: 30,
+                              )),
+                        ],
+                      ),
+                    
+                  ],
+                ),
+
+                lineSpace(context, 30),
+
+              
