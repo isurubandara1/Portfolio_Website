@@ -2,12 +2,35 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import '../DeskTop/Common.dart';
+import '../PageRouter.dart';
 
 class Mprotfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black87,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text(
+          "My Protfolio 💼 🌐 📱",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 30,
+          ),
+        ),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Home()),
+            );
+          },
+          color: Colors.white,
+        ),
+        centerTitle: true,
+      ),
       body: Column(
         children: [
           // Content
