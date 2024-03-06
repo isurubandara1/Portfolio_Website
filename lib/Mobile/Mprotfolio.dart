@@ -75,4 +75,57 @@ class Protfolio extends StatelessWidget {
                 lineSpace(context, 30),
 
                 //Second
-               
+                Column(
+                  children: [
+                    const Text(
+                            "MathsTriks App",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                    const AutoScrollMaths(
+                      imageUrls: [
+                        "m1.png",
+                        "m2.png",
+                        "m3.png",
+                        "m4.png",
+                        "m5.png",
+                        "m6.png",
+                        "m7.png",
+                      ],
+                    ),
+                     Column(
+                        children: [
+                         
+                          const Text(
+                            "With this Mobile application, students can discover solutions for various mathematical problems,\n including fractions, straight lines, area, perimeter, and more. \nWhen users input data into the app, \nit promptly generates answers for specific questions.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.black12,
+                                onPrimary: Colors.white,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(50.0),
+                                  side: const BorderSide(
+                                      color: Colors.blue, width: 2.0),
+                                ),
+                                minimumSize: Size(50, 50),
+                              ),
+                              child: Image.asset(
+                                "assets/github.png",
+                                width: 30,
+                              )),
+                        ],
+                      ),
+                    
+                  ],
+                ),
+
+                lineSpace(context, 30),
