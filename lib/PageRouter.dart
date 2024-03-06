@@ -1,7 +1,9 @@
 import "package:flutter/material.dart";
 import "package:protfolio/DeskTop/About.dart";
+import "package:protfolio/DeskTop/Protfolio.dart";
 import "package:protfolio/DeskTop/Service.dart";
 import "package:protfolio/Mobile/Mabout.dart";
+import "package:protfolio/Mobile/Mprotfolio.dart";
 import "package:protfolio/Mobile/Mservice.dart";
 import "DeskTop/Home.dart";
 import "Mobile/Mhome.dart";
@@ -53,6 +55,24 @@ class Servicep extends StatelessWidget {
             return Service();
           } else {
             return Mservice();
+          }
+        },
+      ),
+    );
+  }
+}
+
+class Pprotfolio extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth > 700) {
+            // Display Desktop version for widths greater than 800
+            return Protfolio();
+          } else {
+            return Mprotfolio();
           }
         },
       ),
