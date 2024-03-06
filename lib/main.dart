@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:protfolio/Mobile/Mabout.dart';
 import 'DeskTop/Home.dart';
 import 'Mobile/Mhome.dart';
+import 'Mobile/Mprotfolio.dart';
 import 'Mobile/Mservice.dart';
 import 'PageRouter.dart';
 import 'Secret.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: Mprotfolio(),
     );
   }
 }
