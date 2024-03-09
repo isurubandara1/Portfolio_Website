@@ -39,7 +39,7 @@ Widget buildDrawer(BuildContext context) {
           height: 20,
         ),
         ListTile(
-          title: Text(
+          title: const Text(
             'About Page',
             style: TextStyle(
                 fontSize: 20,
@@ -53,11 +53,11 @@ Widget buildDrawer(BuildContext context) {
             );
           },
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         ListTile(
-          title: Text(
+          title: const Text(
             'Protfolio Page',
             style: TextStyle(
                 fontSize: 20,
@@ -69,11 +69,11 @@ Widget buildDrawer(BuildContext context) {
             Navigator.pop(context);
           },
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         ListTile(
-          title: Text(
+          title: const Text(
             'Services Page',
             style: TextStyle(
                 fontSize: 20,
@@ -87,7 +87,7 @@ Widget buildDrawer(BuildContext context) {
             );
           },
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         ListTile(
