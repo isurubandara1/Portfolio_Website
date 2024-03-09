@@ -90,7 +90,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                         color: Colors.black87,
                         borderRadius: BorderRadius.circular(10.0),
                       ),
-                      child: const SingleChildScrollView(
+                      child: SingleChildScrollView(
                         child: Column(
                           children: [
                             SizedBox(
