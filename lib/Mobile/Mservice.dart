@@ -125,8 +125,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               height: 15,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 10, right: 10),
+                              padding: EdgeInsets.only(left: 10, right: 10),
                               child: Text(
                                 "I specialize in crafting responsive web applications using flutter. Delivering user-friendly websites with seamless navigation. Ensuring optimal performance and scalability. Additionally, I implement robust backend solutions to enhance functionality.",
                                 textAlign: TextAlign.center,
@@ -167,7 +166,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 2),
+                              const SizedBox(height: 2),
                               Row(
                                 children: [
                                   Image.asset(
