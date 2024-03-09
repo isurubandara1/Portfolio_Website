@@ -79,7 +79,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Container(
@@ -90,7 +90,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                         color: Colors.black87,
                         borderRadius: BorderRadius.circular(10.0),
                       ),
-                      child: SingleChildScrollView(
+                      child: const SingleChildScrollView(
                         child: Column(
                           children: [
                             SizedBox(
@@ -214,7 +214,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                                     ),
                                     const SizedBox(width: 10),
                                     const Padding(
-                                      padding: const EdgeInsets.only(left: 15),
+                                      padding: EdgeInsets.only(left: 15),
                                       child: Text(
                                         "Excellent    80%",
                                         style: TextStyle(
@@ -236,7 +236,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                                     ),
                                     const SizedBox(width: 10),
                                     const Padding(
-                                      padding: const EdgeInsets.only(left: 5),
+                                      padding: EdgeInsets.only(left: 5),
                                       child: Text(
                                         "Excellent    80%",
                                         style: TextStyle(
