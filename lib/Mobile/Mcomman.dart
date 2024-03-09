@@ -91,7 +91,7 @@ Widget buildDrawer(BuildContext context) {
           height: 20,
         ),
         ListTile(
-          title: Text(
+          title: const Text(
             'Contact Page',
             style: TextStyle(
                 fontSize: 20,

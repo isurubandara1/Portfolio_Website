@@ -23,10 +23,10 @@ class Mhome extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Center(
+              const Center(
                 child: Text(
                   "👋🏻 𝗛𝗶, 𝗧𝗵𝗲𝗿𝗲!",
                   style: TextStyle(color: Colors.white, fontSize: 30),
@@ -80,8 +80,8 @@ class Mhome extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 15, right: 15),
+              const Padding(
+                padding: EdgeInsets.only(left: 15, right: 15),
                 child: Text(
                   "Flutter Mobile App Developer with a passion for creating seamless digital experiences. Excited about the future of mobile tech, let's connect and bring your app ideas to life!",
                   textAlign: TextAlign.center,
