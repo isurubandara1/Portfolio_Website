@@ -11,7 +11,7 @@ class Mprotfolio extends StatelessWidget {
       backgroundColor: Colors.black87,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text(
+        title: const Text(
           "My Protfolio 💼 🌐 📱",
           style: TextStyle(
             color: Colors.white,
@@ -20,7 +20,7 @@ class Mprotfolio extends StatelessWidget {
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.push(
               context,
@@ -44,7 +44,7 @@ class Mprotfolio extends StatelessWidget {
                       "Recycling App ",
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     const AutoScrollImages(
@@ -101,7 +101,7 @@ class Mprotfolio extends StatelessWidget {
                       "MathsTriks App",
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     const AutoScrollMaths(
