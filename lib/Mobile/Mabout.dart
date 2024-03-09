@@ -9,10 +9,11 @@ class Mabout extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black87,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(50.0), // Set the desired height here
+        preferredSize:
+            const Size.fromHeight(50.0), // Set the desired height here
         child: AppBar(
           backgroundColor: Colors.black87,
-          iconTheme: IconThemeData(
+          iconTheme: const IconThemeData(
               color: Colors.white), // Change the color of the drawer icon here
         ),
       ),
@@ -69,12 +70,12 @@ class Mabout extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Center(
+            const Center(
               child: Padding(
-                padding: const EdgeInsets.only(left: 20, right: 20),
+                padding: EdgeInsets.only(left: 20, right: 20),
                 child: SelectableText.rich(
                   TextSpan(
                     style: TextStyle(color: Colors.white, fontSize: 20),
@@ -101,7 +102,7 @@ class Mabout extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            Padding(
+            const Padding(
               padding: const EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
                 "Email   :  isurumbandara@gmail.com",
@@ -112,8 +113,8 @@ class Mabout extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 25, right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
                 "Phone  :  +94 704394554  \n                +94 761210812",
                 style: TextStyle(color: Colors.white, fontSize: 20),
@@ -123,8 +124,8 @@ class Mabout extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 25, right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
                 "Skills  :  Flutter , Firebase , Git , Github ",
                 style: TextStyle(color: Colors.white, fontSize: 20),
@@ -134,26 +135,26 @@ class Mabout extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 25, right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
                 "Education  : BSc. Honours Degree \n                      in Computing & Information Systems",
                 style: TextStyle(color: Colors.white, fontSize: 17),
               ),
             ),
 
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
 
-            Padding(
-              padding: const EdgeInsets.only(left: 25, right: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
                 "Experience  :   1 year",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
 
@@ -172,7 +173,7 @@ class Mabout extends StatelessWidget {
                 child: const Text("Download CV"),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],
