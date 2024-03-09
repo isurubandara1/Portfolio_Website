@@ -9,7 +9,7 @@ Widget buildDrawer(BuildContext context) {
       children: <Widget>[
         Container(
           padding: EdgeInsets.all(16.0),
-          child: Center(
+          child: const Center(
             child: CircleAvatar(
               radius: 80.0,
               backgroundImage: AssetImage(
@@ -17,11 +17,11 @@ Widget buildDrawer(BuildContext context) {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         ListTile(
-          title: Text(
+          title: const Text(
             "Home Page",
             style: TextStyle(
                 fontSize: 20,
@@ -35,7 +35,7 @@ Widget buildDrawer(BuildContext context) {
             );
           },
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         ListTile(
