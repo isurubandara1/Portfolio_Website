@@ -41,7 +41,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text(
+        title: const Text(
           "My Services  💼 🌐 📱",
           style: TextStyle(
             color: Colors.white,
@@ -50,7 +50,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.push(
               context,
