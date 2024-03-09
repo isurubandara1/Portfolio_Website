@@ -155,7 +155,7 @@ class Mprotfolio extends StatelessWidget {
                       "Endemic Animals App",
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     const AutoScrollEndamic(
@@ -211,7 +211,7 @@ class Mprotfolio extends StatelessWidget {
                       "News App ",
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     const AutoScrollNews(
@@ -265,7 +265,7 @@ class Mprotfolio extends StatelessWidget {
                       "Random Users API",
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     const AutoScrollRandom(
