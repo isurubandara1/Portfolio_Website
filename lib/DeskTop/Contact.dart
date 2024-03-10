@@ -123,14 +123,12 @@ class _ContactState extends State<Contact> {
                   // Display Navbar for desktop
                   return Navbar(context);
                 } else {
-                  // Display AppBar for mobile
-                  return AppBar(
-                    title: Text('Your App Title'),
-                    backgroundColor: Colors.black87,
-                  );
+                  // Do not display anything for mobile
+                  return Container(); // or SizedBox()
                 }
               },
             ),
+
             Container(
               alignment: Alignment.center,
               color: Colors.white12,
