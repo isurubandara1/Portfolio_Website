@@ -116,7 +116,21 @@ class _ContactState extends State<Contact> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Navbar(context),
+            // Use LayoutBuilder to conditionally display Navbar or AppBar
+            LayoutBuilder(
+              builder: (context, constraints) {
+                if (constraints.maxWidth > 600) {
+                  // Display Navbar for desktop
+                  return Navbar(context);
+                } else {
+                  // Display AppBar for mobile
+                  return AppBar(
+                    title: Text('Your App Title'),
+                    backgroundColor: Colors.black87,
+                  );
+                }
+              },
+            ),
             Container(
               alignment: Alignment.center,
               color: Colors.white12,
@@ -245,7 +259,7 @@ class _ContactState extends State<Contact> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 30),
+                      const SizedBox(height: 15),
                       ElevatedButton(
                         onPressed: () {
                           saveData();
@@ -254,7 +268,7 @@ class _ContactState extends State<Contact> {
                           primary: Colors.blue,
                           onPrimary: Colors.white,
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(7.0),
+                            borderRadius: BorderRadius.circular(12.0),
                             side: const BorderSide(
                                 color: Colors.blue, width: 2.0),
                           ),
@@ -262,7 +276,7 @@ class _ContactState extends State<Contact> {
                         ),
                         child: const Text("Submit"),
                       ),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 5),
                     ],
                   ),
                 ),
