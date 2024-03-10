@@ -33,7 +33,7 @@ class Mprotfolio extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: 20,
+            height: 10,
           ),
           Expanded(
             child: ListView(
@@ -73,7 +73,7 @@ class Mprotfolio extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         ElevatedButton(
                             onPressed: () {},
@@ -97,7 +97,7 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 30,
+                  height: 60,
                 ),
 
                 //Second
@@ -132,7 +132,7 @@ class Mprotfolio extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         ElevatedButton(
                             onPressed: () {},
@@ -156,7 +156,7 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 30,
+                  height: 60,
                 ),
 
                 //Thired
@@ -193,7 +193,7 @@ class Mprotfolio extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         ElevatedButton(
                             onPressed: () {},
@@ -217,7 +217,7 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 30,
+                  height: 60,
                 ),
 
                 //Forth
@@ -276,7 +276,7 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 30,
+                  height: 60,
                 ),
 
                 //Five
@@ -343,7 +343,7 @@ class Mprotfolio extends StatelessWidget {
   Widget buildColumn(
       Widget autoScrollWidget, String title, String description) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 40),
       child: Column(
         children: [
           autoScrollWidget,
@@ -440,7 +440,7 @@ class _AutoScrollImagesState extends State<AutoScrollImages> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 300,
       width: 600,
       child: PageView.builder(
         controller: _controller,
@@ -499,7 +499,7 @@ class _AutoScrollMathsState extends State<AutoScrollMaths> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 300,
       width: 600,
       child: PageView.builder(
         controller: _controller,
@@ -559,7 +559,7 @@ class _AutoScrollEndamicState extends State<AutoScrollEndamic> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 300,
       width: 600,
       child: PageView.builder(
         controller: _controller,
@@ -618,7 +618,7 @@ class _AutoScrollNewsState extends State<AutoScrollNews> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 300,
       width: 600,
       child: PageView.builder(
         controller: _controller,
@@ -678,7 +678,7 @@ class _AutoScrollRandomState extends State<AutoScrollRandom> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 500,
+      height: 300,
       width: 600,
       child: PageView.builder(
         controller: _controller,
