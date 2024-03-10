@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import '../DeskTop/Common.dart';
 import '../PageRouter.dart';
 
@@ -8,7 +7,7 @@ class Mprotfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.black38,
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
@@ -33,7 +32,9 @@ class Mprotfolio extends StatelessWidget {
       ),
       body: Column(
         children: [
-          // Content
+          SizedBox(
+            height: 20,
+          ),
           Expanded(
             child: ListView(
               children: [
@@ -45,7 +46,7 @@ class Mprotfolio extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
                     const AutoScrollImages(
                       imageUrls: [
@@ -63,10 +64,13 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Text(
-                          "If you have excess materials such as glass, metal, plastic, and so on, using this app,\nyou can inform us and request their removal. Our services will come and collect these materials, \nand you can receive a certain amount based on the weight of the materials. \nSo come forward to know about those amounts. \nWe are hoping for your support to help beautify our environment.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15, right: 15),
+                          child: const Text(
+                            "If you have excess materials such as glass, metal, plastic, and so on, using this app, you can inform us and request their removal. Our services will come and collect these materials, and you can receive a certain amount based on the weight of the materials. So come forward to know about those amounts. We are hoping for your support to help beautify our environment.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
                         ),
                         const SizedBox(
                           height: 20,
@@ -92,7 +96,9 @@ class Mprotfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                const SizedBox(
+                  height: 30,
+                ),
 
                 //Second
                 Column(
@@ -102,7 +108,7 @@ class Mprotfolio extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
                     const AutoScrollMaths(
                       imageUrls: [
@@ -117,10 +123,13 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Text(
-                          "With this Mobile application, students can discover solutions for various mathematical problems,\n including fractions, straight lines, area, perimeter, and more. \nWhen users input data into the app, \nit promptly generates answers for specific questions.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15, right: 15),
+                          child: const Text(
+                            "With this Mobile application, students can discover solutions for various mathematical problems, including fractions, straight lines, area, perimeter, and more. When users input data into the app, it promptly generates answers for specific questions.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
                         ),
                         const SizedBox(
                           height: 20,
