@@ -117,12 +117,11 @@ class _ContactState extends State<Contact> {
         child: Column(
           children: [
             Navbar(context),
-            SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               color: Colors.white12,
               height: MediaQuery.of(context).size.height,
-              width: 1000,
+              width: 1100,
               child: SingleChildScrollView(
                 child: Padding(
                   padding: EdgeInsets.only(left: 20, right: 20),
@@ -132,7 +131,7 @@ class _ContactState extends State<Contact> {
                     crossAxisAlignment:
                         CrossAxisAlignment.center, // Center horizontally
                     children: [
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 5),
                       RichText(
                         text: const TextSpan(
                           style: TextStyle(color: Colors.white, fontSize: 25),
@@ -140,13 +139,17 @@ class _ContactState extends State<Contact> {
                             TextSpan(
                                 text: 'Contact ',
                                 style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold)),
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 32,
+                                )),
                             TextSpan(
                                 text: 'Me',
                                 style: TextStyle(
-                                    color: Colors.blue,
-                                    fontWeight: FontWeight.bold)),
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 32,
+                                )),
                           ],
                         ),
                       ),
