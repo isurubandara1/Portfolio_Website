@@ -155,7 +155,9 @@ class Mprotfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                const SizedBox(
+                  height: 30,
+                ),
 
                 //Thired
                 Column(
@@ -165,7 +167,7 @@ class Mprotfolio extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
                     const AutoScrollEndamic(
                       imageUrls: [
@@ -182,10 +184,13 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Text(
-                          "This app has been showcased a wide range of native endemic animals across worldwide. \nThe application is designed to be highly user-friendly \nand is compatible with both Android and iOS platforms.\n Users can acquire valuable knowledge about various animals by referring to this app.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15, right: 15),
+                          child: const Text(
+                            "This app has been showcased a wide range of native endemic animals across worldwide. The application is designed to be highly user-friendly and is compatible with both Android and iOS platforms. Users can acquire valuable knowledge about various animals by referring to this app.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
                         ),
                         const SizedBox(
                           height: 20,
@@ -211,7 +216,9 @@ class Mprotfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                const SizedBox(
+                  height: 30,
+                ),
 
                 //Forth
                 Column(
@@ -221,7 +228,7 @@ class Mprotfolio extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
                     const AutoScrollNews(
                       imageUrls: [
@@ -236,13 +243,16 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Text(
-                          "This Flutter application is a simple yet powerful news app \nthat allows users to stay updated with the latest news from various sources. \nIt fetches news data from a News API and presents it in a clean and intuitive user interface.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15, right: 15),
+                          child: const Text(
+                            "This Flutter application is a simple yet powerful news app that allows users to stay updated with the latest news from various sources. It fetches news data from a News API and presents it in a clean and intuitive user interface.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         ElevatedButton(
                             onPressed: () {},
@@ -265,7 +275,9 @@ class Mprotfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                const SizedBox(
+                  height: 30,
+                ),
 
                 //Five
                 Column(
@@ -275,7 +287,7 @@ class Mprotfolio extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 30),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
                     const AutoScrollRandom(
                       imageUrls: [
@@ -289,13 +301,16 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        const Text(
-                          "When the button is clicked,random users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15, right: 15),
+                          child: const Text(
+                            "When the button is clicked,random users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         ElevatedButton(
                             onPressed: () {},
@@ -328,7 +343,7 @@ class Mprotfolio extends StatelessWidget {
   Widget buildColumn(
       Widget autoScrollWidget, String title, String description) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 5),
       child: Column(
         children: [
           autoScrollWidget,
