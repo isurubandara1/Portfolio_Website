@@ -25,7 +25,7 @@ Widget Navbar(BuildContext context) {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => HomePage()),
+              MaterialPageRoute(builder: (context) => Home()),
             );
           },
           child: const Text(
@@ -38,7 +38,7 @@ Widget Navbar(BuildContext context) {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => About()),
+              MaterialPageRoute(builder: (context) => AboutP()),
             );
           },
           child: const Text(
@@ -64,7 +64,7 @@ Widget Navbar(BuildContext context) {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Protfolio()),
+              MaterialPageRoute(builder: (context) => Pprotfolio()),
             );
           },
           child: const Text(
