@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:protfolio/DeskTop/Protfolio.dart';
 
+import '../DeskTop/Contact.dart';
 import '../PageRouter.dart';
 import 'Mabout.dart';
 
@@ -99,8 +101,10 @@ Widget buildDrawer(BuildContext context) {
                 fontStyle: FontStyle.italic),
           ),
           onTap: () {
-            // Handle item 2 tap
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Contact()),
+            );
           },
         ),
       ],
