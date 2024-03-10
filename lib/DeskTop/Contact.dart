@@ -119,6 +119,7 @@ class _ContactState extends State<Contact> {
             Navbar(context),
             SizedBox(height: 20),
             Container(
+              alignment: Alignment.center,
               color: Colors.white12,
               height: MediaQuery.of(context).size.height,
               width: 1000,
@@ -149,7 +150,7 @@ class _ContactState extends State<Contact> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 30),
                       Padding(
                         padding: const EdgeInsets.only(left: 10, right: 10),
                         child: TextField(
@@ -241,7 +242,7 @@ class _ContactState extends State<Contact> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 30),
                       ElevatedButton(
                         onPressed: () {
                           saveData();
