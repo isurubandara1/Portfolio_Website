@@ -407,17 +407,6 @@ class Mprotfolio extends StatelessWidget {
       ),
     );
   }
-
-  Widget buildDivider() {
-    return Padding(
-      padding: const EdgeInsets.only(left: 40, right: 40),
-      child: Container(
-        width: double.infinity,
-        height: 4,
-        color: Colors.blue,
-      ),
-    );
-  }
 }
 
 //First
@@ -700,18 +689,21 @@ class _AutoScrollRandomState extends State<AutoScrollRandom> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 300,
-      width: 600,
-      child: PageView.builder(
-        controller: _controller,
-        itemCount: widget.imageUrls.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Image.asset(
-            "assets/RandomUser/${widget.imageUrls[index]}",
-            fit: BoxFit.contain,
-          );
-        },
+    return Padding(
+      padding: EdgeInsets.only(right: 50),
+      child: SizedBox(
+        height: 300,
+        width: 600,
+        child: PageView.builder(
+          controller: _controller,
+          itemCount: widget.imageUrls.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Image.asset(
+              "assets/RandomUser/${widget.imageUrls[index]}",
+              fit: BoxFit.contain,
+            );
+          },
+        ),
       ),
     );
   }
