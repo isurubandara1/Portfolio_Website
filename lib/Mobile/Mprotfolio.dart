@@ -11,11 +11,11 @@ class Mprotfolio extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
-          "My Protfolio 💼 🌐 📱",
+          "My Protfolio 📱",
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.blue,
             fontWeight: FontWeight.bold,
-            fontSize: 30,
+            fontSize: 32,
           ),
         ),
         leading: IconButton(
@@ -33,7 +33,7 @@ class Mprotfolio extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Expanded(
             child: ListView(
