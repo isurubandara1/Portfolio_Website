@@ -98,8 +98,8 @@ Widget Navbar(BuildContext context) {
 
 Widget lineSpace(BuildContext context, double height) {
   return Container(
-    color: Colors.black,
+    color: Colors.grey,
     height: height,
-    width: 10,
+    width: MediaQuery.of(context).size.width,
   );
 }

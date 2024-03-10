@@ -97,9 +97,14 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 60,
+                  height: 20,
                 ),
 
+                lineSpace(context, 5),
+
+                SizedBox(
+                  height: 40,
+                ),
                 //Second
                 Column(
                   children: [
@@ -156,7 +161,13 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 60,
+                  height: 20,
+                ),
+
+                lineSpace(context, 5),
+
+                SizedBox(
+                  height: 40,
                 ),
 
                 //Thired
@@ -217,7 +228,13 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 60,
+                  height: 20,
+                ),
+
+                lineSpace(context, 5),
+
+                SizedBox(
+                  height: 40,
                 ),
 
                 //Forth
@@ -276,7 +293,13 @@ class Mprotfolio extends StatelessWidget {
                 ),
 
                 const SizedBox(
-                  height: 60,
+                  height: 20,
+                ),
+
+                lineSpace(context, 5),
+
+                SizedBox(
+                  height: 40,
                 ),
 
                 //Five
