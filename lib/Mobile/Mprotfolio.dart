@@ -7,7 +7,7 @@ class Mprotfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black38,
+      backgroundColor: Colors.black87,
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(

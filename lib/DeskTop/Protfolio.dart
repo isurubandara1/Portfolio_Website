@@ -79,7 +79,7 @@ class Protfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                lineSpace(context, 5),
 
                 //Second
                 Row(
@@ -135,7 +135,7 @@ class Protfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                lineSpace(context, 5),
 
                 //Thired
                 Row(
@@ -193,7 +193,7 @@ class Protfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                lineSpace(context, 5),
 
                 //Forth
                 Row(
@@ -249,7 +249,7 @@ class Protfolio extends StatelessWidget {
                   ],
                 ),
 
-                lineSpace(context, 30),
+                lineSpace(context, 5),
 
                 //Five
                 Row(

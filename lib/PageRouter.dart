@@ -68,7 +68,7 @@ class Pprotfolio extends StatelessWidget {
     return MaterialApp(
       home: LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth > 700) {
+          if (constraints.maxWidth > 900) {
             // Display Desktop version for widths greater than 800
             return Protfolio();
           } else {

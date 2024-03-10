@@ -9,7 +9,7 @@ class Service extends StatefulWidget {
 
 class _ServiceState extends State<Service> with TickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation<double> _animation;
+  late Animation<double> _scaleAnimation;
 
   @override
   void initState() {
@@ -18,11 +18,16 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
     // Set up the animation controller
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 3),
+      duration: Duration(seconds: 2),
     );
 
-    // Set up the fade animation
-    _animation = Tween<double>(begin: 0.0, end: 1.0).animate(_controller);
+    // Set up the scaling animation
+    _scaleAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeInOut,
+      ),
+    );
 
     // Start the animation
     _controller.forward();
@@ -40,10 +45,10 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(0, 0, 0, 0),
       body: AnimatedBuilder(
-        animation: _animation,
+        animation: _scaleAnimation,
         builder: (context, child) {
           return Opacity(
-            opacity: _animation.value,
+            opacity: _scaleAnimation.value,
             child: Container(
               height: double.infinity,
               width: double.infinity,
