@@ -114,7 +114,11 @@ class _ContactState extends State<Contact> {
     return Scaffold(
       appBar: MediaQuery.of(context).size.width <= 850
           ? AppBar(
-              title: Text("AppBar"),
+              backgroundColor: Colors.black,
+              leading: Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+              ),
             )
           : null,
       backgroundColor: Colors.black87,
