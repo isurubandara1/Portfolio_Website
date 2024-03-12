@@ -132,7 +132,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                 children: [
                                   TextSpan(
                                       text:
-                                          "Hello!  I'm Isuru Bandara, a passionate Flutter developer with experience. \n"),
+                                          "Hello!  I'm Isuru Bandara, a passionate Mobile developer with experience. \n"),
                                   TextSpan(
                                     text:
                                         "I specialize in creating cross-platform mobile apps, blending functionality with aesthetic appeal. \n",
