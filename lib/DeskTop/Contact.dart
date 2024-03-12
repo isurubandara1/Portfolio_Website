@@ -115,6 +115,28 @@ class _ContactState extends State<Contact> {
       appBar: MediaQuery.of(context).size.width <= 850
           ? AppBar(
               backgroundColor: Colors.black,
+              centerTitle: true,
+              title: RichText(
+                text: const TextSpan(
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                  children: [
+                    TextSpan(
+                        text: 'Contact ',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 34,
+                        )),
+                    TextSpan(
+                        text: 'Me',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 34,
+                        )),
+                  ],
+                ),
+              ),
               leading: Icon(
                 Icons.arrow_back,
                 color: Colors.white,
