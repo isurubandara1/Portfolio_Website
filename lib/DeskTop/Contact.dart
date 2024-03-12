@@ -112,6 +112,11 @@ class _ContactState extends State<Contact> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: MediaQuery.of(context).size.width <= 600
+          ? AppBar(
+              title: Text("AppBar"),
+            )
+          : null,
       backgroundColor: Colors.black87,
       body: SingleChildScrollView(
         child: Column(
@@ -124,11 +129,10 @@ class _ContactState extends State<Contact> {
                   return Navbar(context);
                 } else {
                   // Do not display anything for mobile
-                  return Container(); // or SizedBox()
+                  return Container();
                 }
               },
             ),
-
             Container(
               alignment: Alignment.center,
               color: Colors.white12,
