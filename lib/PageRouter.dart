@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
       home: LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth > 800) {
+          if (constraints.maxWidth > 850) {
             // Display Desktop version for widths greater than 800
             return HomePage();
           } else {
@@ -32,7 +32,7 @@ class AboutP extends StatelessWidget {
     return MaterialApp(
       home: LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth > 800) {
+          if (constraints.maxWidth > 850) {
             // Display Desktop version for widths greater than 800
             return About();
           } else {
