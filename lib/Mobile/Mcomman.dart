@@ -67,8 +67,10 @@ Widget buildDrawer(BuildContext context) {
                 fontStyle: FontStyle.italic),
           ),
           onTap: () {
-            // Handle item 2 tap
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Pprotfolio()),
+            );
           },
         ),
         const SizedBox(
