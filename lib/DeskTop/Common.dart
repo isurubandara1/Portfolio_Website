@@ -55,7 +55,7 @@ Widget Navbar(BuildContext context) {
             );
           },
           child: const Text(
-            "Experience",
+            "Services",
             style: TextStyle(
                 color: Colors.white, fontWeight: FontWeight.w400, fontSize: 18),
           ),
