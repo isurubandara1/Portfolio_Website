@@ -83,7 +83,7 @@ class Mhome extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(left: 15, right: 15),
                 child: Text(
-                  "Flutter Mobile App Developer with a passion for creating seamless digital experiences. Excited about the future of mobile tech, let's connect and bring your app ideas to life!",
+                  "Mobile App Developer with a passion for creating seamless digital experiences. Excited about the future of mobile tech, let's connect and bring your app ideas to life!",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,

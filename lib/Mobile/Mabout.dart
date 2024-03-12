@@ -82,7 +82,7 @@ class Mabout extends StatelessWidget {
                     children: [
                       TextSpan(
                           text:
-                              "Hello!  I'm Isuru Bandara, a passionate Flutter developer with experience. I specialize in creating cross-platform mobile apps, blending functionality with aesthetic appeal.\n\n"),
+                              "Hello!  I'm Isuru Bandara, a passionate Mobile developer with experience. I specialize in creating cross-platform mobile apps, blending functionality with aesthetic appeal.\n\n"),
                       TextSpan(
                         text:
                             "Proficient in Flutter, Firebase, Git, and Github. Let's collaborate and bring your app ideas to life!",
