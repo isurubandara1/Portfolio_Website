@@ -9,6 +9,7 @@ import 'Mobile/Mservice.dart';
 import 'PageRouter.dart';
 import 'Secret.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();

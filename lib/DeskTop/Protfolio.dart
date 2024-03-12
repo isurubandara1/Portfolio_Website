@@ -313,7 +313,7 @@ class Protfolio extends StatelessWidget {
 
   Widget buildRow(Widget autoScrollWidget, String title, String description) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         children: [
           autoScrollWidget,

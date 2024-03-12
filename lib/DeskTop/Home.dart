@@ -1,5 +1,10 @@
+import 'dart:typed_data';
+
+import 'package:file_saver/file_saver.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:http/http.dart' as http;
 
 import 'Common.dart';
 import 'Contact.dart';
@@ -226,7 +231,9 @@ class _AnimatedContentState extends State<AnimatedContent>
                         ),
                         const SizedBox(width: 16),
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            saveFileExample();
+                          },
                           style: ElevatedButton.styleFrom(
                             primary: Colors.black12,
                             onPrimary: Colors.white,
@@ -285,5 +292,24 @@ void _launchURL(String url) async {
     await launch(url);
   } else {
     throw 'Could not launch $url';
+  }
+}
+
+Future<void> saveFileExample() async {
+  String fileName = 'priya19APC3953.pdf';
+
+  try {
+    final ByteData data = await rootBundle.load('$fileName');
+    final Uint8List bytes = data.buffer.asUint8List();
+
+    String savedFilePath = await FileSaver.instance.saveFile(
+      name: fileName,
+      bytes: bytes,
+      ext: 'pdf',
+    );
+
+    print('File saved successfully at: $savedFilePath');
+  } catch (e) {
+    print('Error saving file: $e');
   }
 }
