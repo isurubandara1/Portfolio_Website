@@ -131,7 +131,7 @@ class _AnimatedContentState extends State<AnimatedContent>
                     height: 20,
                   ),
                   const Text(
-                    "Flutter Mobile App Developer with a passion for creating seamless digital experiences.",
+                    "Mobile App Developer with a passion for creating seamless digital experiences.",
                     textAlign: TextAlign.start,
                     style: TextStyle(
                       color: Colors.white,

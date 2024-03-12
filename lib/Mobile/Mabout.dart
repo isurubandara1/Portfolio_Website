@@ -60,7 +60,7 @@ class Mabout extends StatelessWidget {
                         text: "I am ",
                       ),
                       TextSpan(
-                        text: "Flutter Mobile App Developer",
+                        text: "Mobile App Developer",
                         style: TextStyle(
                           color: Color.fromARGB(255, 22, 205, 211),
                         ),
