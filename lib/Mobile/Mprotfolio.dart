@@ -10,12 +10,25 @@ class Mprotfolio extends StatelessWidget {
       backgroundColor: Colors.black87,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text(
-          "My Protfolio 📱",
-          style: TextStyle(
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-            fontSize: 32,
+        title: RichText(
+          text: TextSpan(
+            style: TextStyle(fontSize: 32),
+            children: [
+              TextSpan(
+                text: 'My ',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextSpan(
+                text: 'Protfolio 📱',
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
         ),
         leading: IconButton(
@@ -43,7 +56,7 @@ class Mprotfolio extends StatelessWidget {
                   children: [
                     const Text(
                       "Recycling App ",
-                      style: TextStyle(color: Colors.white, fontSize: 30),
+                      style: TextStyle(color: Colors.white, fontSize: 22),
                     ),
                     const SizedBox(
                       height: 5,
@@ -110,7 +123,7 @@ class Mprotfolio extends StatelessWidget {
                   children: [
                     const Text(
                       "MathsTriks App",
-                      style: TextStyle(color: Colors.white, fontSize: 30),
+                      style: TextStyle(color: Colors.white, fontSize: 22),
                     ),
                     const SizedBox(
                       height: 5,
@@ -175,7 +188,7 @@ class Mprotfolio extends StatelessWidget {
                   children: [
                     const Text(
                       "Endemic Animals App",
-                      style: TextStyle(color: Colors.white, fontSize: 30),
+                      style: TextStyle(color: Colors.white, fontSize: 22),
                     ),
                     const SizedBox(
                       height: 5,
@@ -242,7 +255,7 @@ class Mprotfolio extends StatelessWidget {
                   children: [
                     const Text(
                       "News App ",
-                      style: TextStyle(color: Colors.white, fontSize: 30),
+                      style: TextStyle(color: Colors.white, fontSize: 22),
                     ),
                     const SizedBox(
                       height: 5,
@@ -307,7 +320,7 @@ class Mprotfolio extends StatelessWidget {
                   children: [
                     const Text(
                       "Random Users API",
-                      style: TextStyle(color: Colors.white, fontSize: 30),
+                      style: TextStyle(color: Colors.white, fontSize: 22),
                     ),
                     const SizedBox(
                       height: 5,
@@ -373,7 +386,7 @@ class Mprotfolio extends StatelessWidget {
           const SizedBox(height: 20),
           Text(
             title,
-            style: const TextStyle(color: Colors.white, fontSize: 30),
+            style: const TextStyle(color: Colors.white, fontSize: 22),
           ),
           const SizedBox(height: 20),
           Text(

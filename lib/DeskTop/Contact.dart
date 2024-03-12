@@ -121,97 +121,104 @@ class _ContactState extends State<Contact> {
                   style: TextStyle(color: Colors.white, fontSize: 25),
                   children: [
                     TextSpan(
-                        text: 'Contact ',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 34,
-                        )),
+                      text: 'Contact ',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 34,
+                      ),
+                    ),
                     TextSpan(
-                        text: 'Me',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 34,
-                        )),
+                      text: 'Me',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 34,
+                      ),
+                    ),
                   ],
                 ),
               ),
-              leading: Icon(
-                Icons.arrow_back,
-                color: Colors.white,
+              leading: IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: Colors.white,
+                ),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
               ),
             )
           : null,
       backgroundColor: Colors.black87,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            // Use LayoutBuilder to conditionally display Navbar or AppBar
-            LayoutBuilder(
-              builder: (context, constraints) {
-                if (constraints.maxWidth > 850) {
-                  // Display Navbar for desktop
-                  return Navbar(context);
-                } else {
-                  // Do not display anything for mobile
-                  return Container();
-                }
-              },
-            ),
-            Container(
-              alignment: Alignment.center,
-              color: Colors.white12,
-              height: MediaQuery.of(context).size.height,
-              width: 1100,
-              child: SingleChildScrollView(
-                child: Padding(
-                  padding: EdgeInsets.only(left: 20, right: 20),
+      body: Column(
+        children: [
+          LayoutBuilder(
+            builder: (context, constraints) {
+              if (constraints.maxWidth > 850) {
+                // Display Navbar for desktop
+                return Navbar(context);
+              } else {
+                // Do not display anything for mobile
+                return Container();
+              }
+            },
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Container(
+                alignment: Alignment.center,
+                color: Colors.white12,
+                padding: EdgeInsets.symmetric(vertical: 20),
+                child: SizedBox(
+                  width: 1100,
                   child: Column(
-                    mainAxisAlignment:
-                        MainAxisAlignment.center, // Center vertically
-                    crossAxisAlignment:
-                        CrossAxisAlignment.center, // Center horizontally
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const SizedBox(height: 5),
-                      RichText(
-                        text: const TextSpan(
-                          style: TextStyle(color: Colors.white, fontSize: 25),
-                          children: [
-                            TextSpan(
-                                text: 'Contact ',
+                      MediaQuery.of(context).size.width <= 850
+                          ? CircleAvatar(
+                              radius: 80.0,
+                              backgroundImage: AssetImage('assets/drawer.jpg'),
+                            )
+                          : RichText(
+                              text: const TextSpan(
                                 style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 32,
-                                )),
-                            TextSpan(
-                                text: 'Me',
-                                style: TextStyle(
-                                  color: Colors.blue,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 32,
-                                )),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 30),
+                                    color: Colors.white, fontSize: 25),
+                                children: [
+                                  TextSpan(
+                                      text: 'Contact ',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 32,
+                                      )),
+                                  TextSpan(
+                                      text: 'Me',
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 32,
+                                      )),
+                                ],
+                              ),
+                            ),
+                      SizedBox(height: 50),
                       Padding(
-                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: TextField(
                           controller: nameController,
-                          //autofocus: true,
-                          style: const TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.blue,
-                                width: 20,
+                                width: 2,
                               ),
                               borderRadius: BorderRadius.circular(10),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.blue,
                                 width: 2.0,
                               ),
@@ -219,29 +226,29 @@ class _ContactState extends State<Contact> {
                             ),
                             hintText: "Enter your name",
                             labelText: "Name",
-                            hintStyle: const TextStyle(
-                                color: Colors.white, fontSize: 12),
-                            labelStyle: const TextStyle(
-                                color: Colors.white, fontSize: 12),
+                            hintStyle:
+                                TextStyle(color: Colors.white, fontSize: 12),
+                            labelStyle:
+                                TextStyle(color: Colors.white, fontSize: 12),
                           ),
                         ),
                       ),
-                      const SizedBox(height: 20),
+                      SizedBox(height: 20),
                       Padding(
-                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: TextField(
                           controller: emailController,
-                          style: const TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white),
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.blue,
-                                width: 20,
+                                width: 2,
                               ),
                               borderRadius: BorderRadius.circular(10),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.blue,
                                 width: 2.0,
                               ),
@@ -249,30 +256,30 @@ class _ContactState extends State<Contact> {
                             ),
                             hintText: "Enter your email",
                             labelText: "Email Address",
-                            hintStyle: const TextStyle(
-                                color: Colors.white, fontSize: 12),
-                            labelStyle: const TextStyle(
-                                color: Colors.white, fontSize: 12),
+                            hintStyle:
+                                TextStyle(color: Colors.white, fontSize: 12),
+                            labelStyle:
+                                TextStyle(color: Colors.white, fontSize: 12),
                           ),
                         ),
                       ),
-                      const SizedBox(height: 20),
+                      SizedBox(height: 20),
                       Padding(
-                        padding: const EdgeInsets.only(left: 10, right: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         child: TextField(
                           controller: messageController,
-                          style: const TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white),
                           maxLines: 8,
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.blue,
-                                width: 20,
+                                width: 2,
                               ),
                               borderRadius: BorderRadius.circular(10),
                             ),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.blue,
                                 width: 2.0,
                               ),
@@ -280,14 +287,14 @@ class _ContactState extends State<Contact> {
                             ),
                             hintText: "Enter your Message",
                             labelText: "Write Message Here...",
-                            hintStyle: const TextStyle(
-                                color: Colors.white, fontSize: 12),
-                            labelStyle: const TextStyle(
-                                color: Colors.white, fontSize: 12),
+                            hintStyle:
+                                TextStyle(color: Colors.white, fontSize: 12),
+                            labelStyle:
+                                TextStyle(color: Colors.white, fontSize: 12),
                           ),
                         ),
                       ),
-                      const SizedBox(height: 15),
+                      SizedBox(height: 25),
                       ElevatedButton(
                         onPressed: () {
                           saveData();
@@ -297,21 +304,20 @@ class _ContactState extends State<Contact> {
                           onPrimary: Colors.white,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12.0),
-                            side: const BorderSide(
-                                color: Colors.blue, width: 2.0),
+                            side: BorderSide(color: Colors.blue, width: 2.0),
                           ),
-                          minimumSize: const Size(120, 60),
+                          minimumSize: Size(120, 60),
                         ),
-                        child: const Text("Submit"),
+                        child: Text("Submit"),
                       ),
-                      const SizedBox(height: 5),
+                      SizedBox(height: 10),
                     ],
                   ),
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
