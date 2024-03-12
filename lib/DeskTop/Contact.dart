@@ -112,7 +112,7 @@ class _ContactState extends State<Contact> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MediaQuery.of(context).size.width <= 800
+      appBar: MediaQuery.of(context).size.width <= 850
           ? AppBar(
               title: Text("AppBar"),
             )
@@ -124,7 +124,7 @@ class _ContactState extends State<Contact> {
             // Use LayoutBuilder to conditionally display Navbar or AppBar
             LayoutBuilder(
               builder: (context, constraints) {
-                if (constraints.maxWidth > 800) {
+                if (constraints.maxWidth > 850) {
                   // Display Navbar for desktop
                   return Navbar(context);
                 } else {
