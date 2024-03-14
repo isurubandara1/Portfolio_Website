@@ -144,7 +144,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                     ),
                                     TextSpan(
                                       text:
-                                          "Flutter, Firebase, Git, and Github. Let's collaborate and bring your app ideas to life! ",
+                                          "Flutter, React Native, Firebase, Git, and Github. Let's collaborate and bring your app ideas to life! ",
                                     ),
                                     TextSpan(
                                       text: "📱✨",
