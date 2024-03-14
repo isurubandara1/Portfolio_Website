@@ -1,4 +1,6 @@
+import 'package:file_saver/file_saver.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../DeskTop/Common.dart';
 import '../DeskTop/Contact.dart';
@@ -205,5 +207,25 @@ void _launchURL(String url) async {
     await launch(url);
   } else {
     throw 'Could not launch $url';
+  }
+}
+
+//Download the CV fron button
+Future<void> saveFileExample() async {
+  String fileName = 'priya19APC3953.pdf';
+
+  try {
+    final ByteData data = await rootBundle.load('$fileName');
+    final Uint8List bytes = data.buffer.asUint8List();
+
+    String savedFilePath = await FileSaver.instance.saveFile(
+      name: fileName,
+      bytes: bytes,
+      ext: 'pdf',
+    );
+
+    print('File saved successfully at: $savedFilePath');
+  } catch (e) {
+    print('Error saving file: $e');
   }
 }
