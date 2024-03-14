@@ -127,8 +127,8 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "Skills  :  Flutter , Firebase , Git , Github ",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                "Skills  :  Flutter , React Native, Firebase , Git , Github ",
+                style: TextStyle(color: Colors.white, fontSize: 15),
               ),
             ),
 
