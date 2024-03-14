@@ -177,7 +177,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                             const Padding(
                               padding: EdgeInsets.only(left: 80, bottom: 10),
                               child: SelectableText(
-                                "Skills  :  Flutter , Firebase , Git , Github ",
+                                "Skills  :  Flutter , React Native, Firebase , Git , Github ",
                                 style: TextStyle(
                                     color: Colors.white, fontSize: 16),
                               ),
