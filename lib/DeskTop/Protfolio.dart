@@ -456,7 +456,7 @@ class _AutoScrollMathsState extends State<AutoScrollMaths> {
         );
       } else {
         _controller.nextPage(
-          duration: Duration(milliseconds: 2000),
+          duration: const Duration(milliseconds: 2000),
           curve: Curves.ease,
         );
       }
@@ -516,7 +516,7 @@ class _AutoScrollEndamicState extends State<AutoScrollEndamic> {
         );
       } else {
         _controller.nextPage(
-          duration: Duration(milliseconds: 2000),
+          duration: const Duration(milliseconds: 2000),
           curve: Curves.ease,
         );
       }
