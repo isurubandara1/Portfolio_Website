@@ -343,9 +343,9 @@ class Protfolio extends StatelessWidget {
                   onPrimary: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50.0),
-                    side: BorderSide(color: Colors.blue, width: 2.0),
+                    side: const BorderSide(color: Colors.blue, width: 2.0),
                   ),
-                  minimumSize: Size(50, 50),
+                  minimumSize: const Size(50, 50),
                 ),
                 child: Image.asset(
                   "assets/github.png",
@@ -397,7 +397,7 @@ class _AutoScrollImagesState extends State<AutoScrollImages> {
         );
       } else {
         _controller.nextPage(
-          duration: Duration(milliseconds: 2000),
+          duration: const Duration(milliseconds: 2000),
           curve: Curves.ease,
         );
       }
