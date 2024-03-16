@@ -575,7 +575,7 @@ class _AutoScrollNewsState extends State<AutoScrollNews> {
         );
       } else {
         _controller.nextPage(
-          duration: Duration(milliseconds: 2000),
+          duration: const Duration(milliseconds: 2000),
           curve: Curves.ease,
         );
       }
