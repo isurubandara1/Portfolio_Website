@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
 import 'Common.dart';
 
@@ -58,7 +59,10 @@ class Protfolio extends StatelessWidget {
                             height: 20,
                           ),
                           ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                _launchURL(
+                                    'https://github.com/isurubandara1/Recycling_App');
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: Colors.black12,
                                 onPrimary: Colors.white,
@@ -661,5 +665,14 @@ class _AutoScrollRandomState extends State<AutoScrollRandom> {
         },
       ),
     );
+  }
+}
+
+// Function to open a URL
+void _launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
