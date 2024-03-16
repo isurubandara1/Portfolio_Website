@@ -635,7 +635,7 @@ class _AutoScrollRandomState extends State<AutoScrollRandom> {
         );
       } else {
         _controller.nextPage(
-          duration: Duration(milliseconds: 2000),
+          duration: const Duration(milliseconds: 2000),
           curve: Curves.ease,
         );
       }
