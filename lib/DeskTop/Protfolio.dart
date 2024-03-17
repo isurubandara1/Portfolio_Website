@@ -179,10 +179,10 @@ class Protfolio extends StatelessWidget {
                             height: 20,
                           ),
                           ElevatedButton(
-                              // onPressed: () {
-                              //   _launchURL(
-                              //       'https://github.com/isurubandara1/Endemic_Animals_App');
-                              // },
+                              onPressed: () {
+                                _launchURL(
+                                    'https://github.com/isurubandara1/Endemic_Animals_App');
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: Colors.black12,
                                 onPrimary: Colors.white,
