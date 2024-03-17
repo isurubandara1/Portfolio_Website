@@ -102,10 +102,23 @@ class Mabout extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
+            Center(
+              child: const Padding(
+                padding: const EdgeInsets.only(left: 25, right: 10),
+                child: SelectableText(
+                  "isurumbandara@gmail.com",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+              ),
+            ),
+
+            const SizedBox(
+              height: 15,
+            ),
             const Padding(
-              padding: const EdgeInsets.only(left: 25, right: 10),
+              padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "EMAIL   :  isurumbandara@gmail.com",
+                "+94 704394554  \n                 +94 761210812",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
@@ -116,7 +129,7 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "PHONE  :  +94 704394554  \n                +94 761210812",
+                "Flutter , React Native , Firebase , Git , Github ",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
@@ -127,19 +140,8 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "SKILLS  :  Flutter , React Native ,\n              Firebase , Git , Github ",
-                style: TextStyle(color: Colors.white, fontSize: 20),
-              ),
-            ),
-
-            const SizedBox(
-              height: 15,
-            ),
-            const Padding(
-              padding: EdgeInsets.only(left: 25, right: 10),
-              child: SelectableText(
-                "EDUCATION  :  BSc.(Hons) \n    Computing & Information Systems",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                "BSc.(Hons) Computing & Information Systems",
+                style: TextStyle(color: Colors.white, fontSize: 17),
               ),
             ),
 
@@ -150,7 +152,7 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "EXPERIENCE  :   1 year",
+                "1 year",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
