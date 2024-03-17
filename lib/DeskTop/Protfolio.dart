@@ -296,10 +296,10 @@ class Protfolio extends StatelessWidget {
                             height: 20,
                           ),
                           ElevatedButton(
-                              // onPressed: () {
-                              //   _launchURL(
-                              //       'https://github.com/isurubandara1/Random_Users');
-                              // },
+                              onPressed: () {
+                                _launchURL(
+                                    'https://github.com/isurubandara1/Random_Users');
+                              },
                               style: ElevatedButton.styleFrom(
                                 primary: Colors.black12,
                                 onPrimary: Colors.white,
