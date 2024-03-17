@@ -115,47 +115,43 @@ class Mabout extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 25, right: 10),
-              child: SelectableText(
-                "+94 704394554  \n                 +94 761210812",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+            Center(
+              child: const Padding(
+                padding: EdgeInsets.only(left: 25, right: 10),
+                child: SelectableText(
+                  "+94 704394554 \n+94 761210812",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
               ),
             ),
 
             const SizedBox(
               height: 15,
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 25, right: 10),
-              child: SelectableText(
-                "Flutter , React Native , Firebase , Git , Github ",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+            Center(
+              child: const Padding(
+                padding: EdgeInsets.only(left: 25, right: 10),
+                child: SelectableText(
+                  "Flutter, Firebase, React Native, Git, Github",
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
               ),
             ),
 
             const SizedBox(
               height: 15,
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 25, right: 10),
-              child: SelectableText(
-                "BSc.(Hons) Computing & Information Systems",
-                style: TextStyle(color: Colors.white, fontSize: 17),
+            Center(
+              child: const Padding(
+                padding: EdgeInsets.only(left: 25, right: 10),
+                child: SelectableText(
+                  "I have a BSc. (Hons) in Computing & Information Systems degree and 1 year of experience.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
               ),
             ),
 
-            const SizedBox(
-              height: 10,
-            ),
-
-            const Padding(
-              padding: EdgeInsets.only(left: 25, right: 10),
-              child: SelectableText(
-                "1 year",
-                style: TextStyle(color: Colors.white, fontSize: 20),
-              ),
-            ),
             const SizedBox(
               height: 15,
             ),
