@@ -105,7 +105,7 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: const EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "Email   :  isurumbandara@gmail.com",
+                "EMAIL   :  isurumbandara@gmail.com",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
@@ -116,7 +116,7 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "Phone  :  +94 704394554  \n                +94 761210812",
+                "PHONE  :  +94 704394554  \n                +94 761210812",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
@@ -127,8 +127,8 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "Skills  :  Flutter , React Native, Firebase , Git , Github ",
-                style: TextStyle(color: Colors.white, fontSize: 16),
+                "SKILLS  :  Flutter , React Native ,\n              Firebase , Git , Github ",
+                style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
 
@@ -138,8 +138,8 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "Education  : BSc. Honours Degree \n                      in Computing & Information Systems",
-                style: TextStyle(color: Colors.white, fontSize: 17),
+                "EDUCATION  :  BSc.(Hons) \n    Computing & Information Systems",
+                style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
 
@@ -150,7 +150,7 @@ class Mabout extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(left: 25, right: 10),
               child: SelectableText(
-                "Experience  :   1 year",
+                "EXPERIENCE  :   1 year",
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ),
