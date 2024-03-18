@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
 import '../DeskTop/Common.dart';
 import '../PageRouter.dart';
@@ -719,5 +720,14 @@ class _AutoScrollRandomState extends State<AutoScrollRandom> {
         ),
       ),
     );
+  }
+}
+
+// Function to open a URL
+void _launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
