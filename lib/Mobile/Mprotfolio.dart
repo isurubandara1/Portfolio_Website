@@ -116,7 +116,7 @@ class Mprotfolio extends StatelessWidget {
 
                 lineSpace(context, 5),
 
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
                 //Second
@@ -142,9 +142,9 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 15, right: 15),
-                          child: const Text(
+                        const Padding(
+                          padding: EdgeInsets.only(left: 15, right: 15),
+                          child: Text(
                             "With this Mobile application, students can discover solutions for various mathematical problems, including fractions, straight lines, area, perimeter, and more. When users input data into the app, it promptly generates answers for specific questions.",
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.white, fontSize: 15),
