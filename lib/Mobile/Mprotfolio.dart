@@ -46,7 +46,7 @@ class Mprotfolio extends StatelessWidget {
       ),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Expanded(
@@ -78,9 +78,9 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 15, right: 15),
-                          child: const Text(
+                        const Padding(
+                          padding: EdgeInsets.only(left: 15, right: 15),
+                          child: Text(
                             "If you have excess materials such as glass, metal, plastic, and so on, using this app, you can inform us and request their removal. Our services will come and collect these materials, and you can receive a certain amount based on the weight of the materials. So come forward to know about those amounts. We are hoping for your support to help beautify our environment.",
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.white, fontSize: 15),
