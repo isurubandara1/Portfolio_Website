@@ -312,7 +312,7 @@ class Mprotfolio extends StatelessWidget {
 
                 lineSpace(context, 5),
 
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
 
@@ -338,9 +338,9 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 15, right: 15),
-                          child: const Text(
+                        const Padding(
+                          padding: EdgeInsets.only(left: 15, right: 15),
+                          child: Text(
                             "When the button is clicked,random users and their details will be displayed on the screen. \nYou can explore more users and details by scrolling. \nThere has been used the technique of Flutter API call.",
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.white, fontSize: 15),
