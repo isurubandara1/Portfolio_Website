@@ -247,7 +247,7 @@ class Mprotfolio extends StatelessWidget {
 
                 lineSpace(context, 5),
 
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
 
@@ -274,9 +274,9 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 15, right: 15),
-                          child: const Text(
+                        const Padding(
+                          padding: EdgeInsets.only(left: 15, right: 15),
+                          child: Text(
                             "This Flutter application is a simple yet powerful news app that allows users to stay updated with the latest news from various sources. It fetches news data from a News API and presents it in a clean and intuitive user interface.",
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.white, fontSize: 15),
