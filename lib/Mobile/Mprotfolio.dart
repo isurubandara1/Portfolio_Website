@@ -180,7 +180,7 @@ class Mprotfolio extends StatelessWidget {
 
                 lineSpace(context, 5),
 
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
 
@@ -209,9 +209,9 @@ class Mprotfolio extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 15, right: 15),
-                          child: const Text(
+                        const Padding(
+                          padding: EdgeInsets.only(left: 15, right: 15),
+                          child: Text(
                             "This app has been showcased a wide range of native endemic animals across worldwide. The application is designed to be highly user-friendly and is compatible with both Android and iOS platforms. Users can acquire valuable knowledge about various animals by referring to this app.",
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.white, fontSize: 15),
