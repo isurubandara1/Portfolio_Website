@@ -160,7 +160,7 @@ class Mprotfolio extends StatelessWidget {
                               onPrimary: Colors.white,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50.0),
-                                side: const BorderSide(
+                                side: BorderSide(
                                     color: Colors.blue, width: 2.0),
                               ),
                               minimumSize: Size(50, 50),
