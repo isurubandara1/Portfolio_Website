@@ -160,8 +160,8 @@ class Mprotfolio extends StatelessWidget {
                               onPrimary: Colors.white,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(50.0),
-                                side: BorderSide(
-                                    color: Colors.blue, width: 2.0),
+                                side:
+                                    BorderSide(color: Colors.blue, width: 2.0),
                               ),
                               minimumSize: Size(50, 50),
                             ),
@@ -286,7 +286,10 @@ class Mprotfolio extends StatelessWidget {
                           height: 10,
                         ),
                         ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              _launchURL(
+                                  'https://github.com/isurubandara1/News_App');
+                            },
                             style: ElevatedButton.styleFrom(
                               primary: Colors.black12,
                               onPrimary: Colors.white,
