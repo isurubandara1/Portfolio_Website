@@ -12,7 +12,7 @@ class Mprotfolio extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: RichText(
-          text: TextSpan(
+          text: const TextSpan(
             style: TextStyle(fontSize: 32),
             children: [
               TextSpan(
