@@ -307,7 +307,7 @@ class Mprotfolio extends StatelessWidget {
                                 side: const BorderSide(
                                     color: Colors.blue, width: 2.0),
                               ),
-                              minimumSize: Size(50, 50),
+                              minimumSize: const Size(50, 50),
                             ),
                             child: Image.asset(
                               "assets/github.png",
@@ -374,7 +374,7 @@ class Mprotfolio extends StatelessWidget {
                                 side: const BorderSide(
                                     color: Colors.blue, width: 2.0),
                               ),
-                              minimumSize: Size(50, 50),
+                              minimumSize: const Size(50, 50),
                             ),
                             child: Image.asset(
                               "assets/github.png",
