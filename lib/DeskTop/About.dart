@@ -81,7 +81,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(height: 20),
+                            const SizedBox(height: 20),
                             SlideTransition(
                               position: Tween<Offset>(
                                 begin: Offset(-2.0, 0.0),
