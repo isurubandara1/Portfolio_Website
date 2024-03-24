@@ -78,7 +78,7 @@ Widget Navbar(BuildContext context) {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Contact()),
+              MaterialPageRoute(builder: (context) => const Contact()),
             );
           },
           style: ElevatedButton.styleFrom(
@@ -86,7 +86,7 @@ Widget Navbar(BuildContext context) {
             onPrimary: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(7.0),
-              side: BorderSide(color: Colors.blue, width: 2.0),
+              side: const BorderSide(color: Colors.blue, width: 2.0),
             ),
           ),
           child: const Text("Contact"),
