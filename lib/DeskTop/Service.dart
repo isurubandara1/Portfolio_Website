@@ -69,30 +69,13 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                       height: 10,
                     ),
 
-                    //My services
-                    Center(
-                      child: Text(
-                        "My Services  💼 🌐 📱",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-
                     // Content
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    Column(
                       children: [
                         Container(
-                          width: 300,
-                          height: 450,
+                          width: MediaQuery.of(context).size.width - 100,
+                          height: 300,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white, width: 2.0),
                             color: Colors.black87,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
@@ -168,7 +151,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                       CircularPercentIndicator(
                                         radius: 50.0,
                                         lineWidth: 15.0,
-                                        percent: 0.75,
+                                        percent: 0.25,
                                         progressColor: Colors.blue,
                                         backgroundColor: Colors.white,
                                         center: Text(
