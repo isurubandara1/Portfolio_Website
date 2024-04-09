@@ -184,10 +184,20 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         height: 90,
                                       ),
                                       const SizedBox(width: 10),
-                                      const Text(
-                                        "Excellent    85%",
-                                        style: TextStyle(
-                                            color: Colors.blue, fontSize: 20),
+                                      CircularPercentIndicator(
+                                        radius: 50.0,
+                                        lineWidth: 15.0,
+                                        percent: 0.25,
+                                        progressColor: Colors.blue,
+                                        backgroundColor: Colors.white,
+                                        center: Text(
+                                          "75%",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -202,10 +212,20 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           height: 80,
                                         ),
                                         const SizedBox(width: 10),
-                                        const Text(
-                                          "Excellent    60%",
-                                          style: TextStyle(
-                                              color: Colors.blue, fontSize: 20),
+                                        CircularPercentIndicator(
+                                          radius: 50.0,
+                                          lineWidth: 15.0,
+                                          percent: 0.25,
+                                          progressColor: Colors.blue,
+                                          backgroundColor: Colors.white,
+                                          center: Text(
+                                            "75%",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -221,14 +241,19 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           height: 45,
                                         ),
                                         const SizedBox(width: 10),
-                                        const Padding(
-                                          padding:
-                                              const EdgeInsets.only(left: 15),
-                                          child: Text(
-                                            "Excellent    80%",
+                                        CircularPercentIndicator(
+                                          radius: 50.0,
+                                          lineWidth: 15.0,
+                                          percent: 0.25,
+                                          progressColor: Colors.blue,
+                                          backgroundColor: Colors.white,
+                                          center: Text(
+                                            "75%",
                                             style: TextStyle(
-                                                color: Colors.blue,
-                                                fontSize: 20),
+                                              color: Colors.white,
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -245,14 +270,19 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           height: 60,
                                         ),
                                         const SizedBox(width: 10),
-                                        const Padding(
-                                          padding:
-                                              const EdgeInsets.only(left: 5),
-                                          child: Text(
-                                            "Excellent    80%",
+                                        CircularPercentIndicator(
+                                          radius: 50.0,
+                                          lineWidth: 15.0,
+                                          percent: 0.25,
+                                          progressColor: Colors.blue,
+                                          backgroundColor: Colors.white,
+                                          center: Text(
+                                            "75%",
                                             style: TextStyle(
-                                                color: Colors.blue,
-                                                fontSize: 20),
+                                              color: Colors.white,
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
                                         ),
                                       ],
