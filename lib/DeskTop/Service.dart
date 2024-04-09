@@ -174,8 +174,10 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         center: Text(
                                           "75%",
                                           style: TextStyle(
-                                              color: Colors.white,
-                                              fontSize: 20),
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
                                       ),
                                     ],
