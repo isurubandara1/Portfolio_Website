@@ -76,7 +76,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                           width: MediaQuery.of(context).size.width - 100,
                           height: 300,
                           decoration: BoxDecoration(
-                            color: Colors.black87,
+                            color: Colors.black54,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: const SingleChildScrollView(
@@ -95,10 +95,17 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                 SizedBox(
                                   height: 15,
                                 ),
-                                Text(
-                                  "I specialize in developing cross-platform mobile apps for Android and iOS using Flutter. My services include seamless integration of Firebase for robust backend functionalities, ensuring efficient and scalable app solutions.",
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(color: Colors.white),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 20, right: 20),
+                                  child: Text(
+                                    "I specialize in developing cross-platform mobile apps for Android and iOS using Flutter. My services include seamless integration of Firebase for robust backend functionalities, ensuring efficient and scalable app solutions.",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.normal,
+                                    ),
+                                  ),
                                 ),
                                 SizedBox(
                                   height: 40,
@@ -114,11 +121,15 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                   height: 15,
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.only(left: 10, right: 10),
+                                  padding: EdgeInsets.only(left: 20, right: 20),
                                   child: Text(
                                     "I specialize in crafting responsive web applications using flutter. Delivering user-friendly websites with seamless navigation. Ensuring optimal performance and scalability. Additionally, I implement robust backend solutions to enhance functionality.",
                                     textAlign: TextAlign.center,
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.normal,
+                                    ),
                                   ),
                                 ),
                               ],
@@ -129,10 +140,9 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                           width: 20,
                         ),
                         Container(
-                          width: 300,
-                          height: 450,
+                          width: MediaQuery.of(context).size.width - 100,
+                          height: 300,
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white, width: 2.0),
                             color: Colors.black87,
                             borderRadius: BorderRadius.circular(10.0),
                           ),
@@ -140,7 +150,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                             child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Row(
+                                  Column(
                                     children: [
                                       Image.asset(
                                         "assets/dart.png",
@@ -166,7 +176,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                     ],
                                   ),
                                   SizedBox(height: 2),
-                                  Row(
+                                  Column(
                                     children: [
                                       Image.asset(
                                         "assets/flutter.png",
@@ -184,7 +194,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                   const SizedBox(height: 5),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 10),
-                                    child: Row(
+                                    child: Column(
                                       children: [
                                         Image.asset(
                                           "assets/firebase.png",
@@ -203,7 +213,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                   const SizedBox(height: 20),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 30),
-                                    child: Row(
+                                    child: Column(
                                       children: [
                                         Image.asset(
                                           "assets/git.png",
@@ -227,7 +237,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                   const SizedBox(height: 30),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 25),
-                                    child: Row(
+                                    child: Column(
                                       children: [
                                         Image.asset(
                                           "assets/github.png",
