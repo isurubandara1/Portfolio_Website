@@ -45,6 +45,7 @@ dependencies:
   flutter_downloader: ^1.11.6
   file_saver: ^0.2.12
   http: ^1.2.0
+  percent_indicator: ^4.2.3
 
 dev_dependencies:
   flutter_test:

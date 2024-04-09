@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 import 'Common.dart';
 
@@ -164,10 +165,18 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         height: 90,
                                       ),
                                       const SizedBox(width: 10),
-                                      const Text(
-                                        "Excellent    90%",
-                                        style: TextStyle(
-                                            color: Colors.blue, fontSize: 20),
+                                      CircularPercentIndicator(
+                                        radius: 50.0,
+                                        lineWidth: 15.0,
+                                        percent: 0.75,
+                                        progressColor: Colors.blue,
+                                        backgroundColor: Colors.white,
+                                        center: Text(
+                                          "75%",
+                                          style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 20),
+                                        ),
                                       ),
                                     ],
                                   ),
