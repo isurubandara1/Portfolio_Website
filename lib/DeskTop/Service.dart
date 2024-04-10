@@ -44,7 +44,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(0, 0, 0, 0),
+      backgroundColor: Colors.black54,
       body: AnimatedBuilder(
         animation: _scaleAnimation,
         builder: (context, child) {
@@ -57,6 +57,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                 image: DecorationImage(
                   image: AssetImage('assets/cover.jpg'),
                   fit: BoxFit.cover,
+                  opacity: 0.5,
                 ),
               ),
               child: SingleChildScrollView(
@@ -142,10 +143,6 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                         Container(
                           width: MediaQuery.of(context).size.width - 100,
                           height: 300,
-                          decoration: BoxDecoration(
-                            color: Colors.black87,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
                           child: SingleChildScrollView(
                             child: Padding(
                               padding:
@@ -166,8 +163,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           radius: 40.0,
                                           lineWidth: 10.0,
                                           percent: 0.85,
-                                          progressColor: const Color.fromARGB(
-                                              255, 1, 28, 51),
+                                          progressColor: Colors.green,
                                           backgroundColor: Colors.white,
                                           center: Text(
                                             "85%",
@@ -223,6 +219,32 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           backgroundColor: Colors.white,
                                           center: Text(
                                             "75%",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(width: 10),
+                                    Column(
+                                      children: [
+                                        Image.asset(
+                                          "assets/git.png",
+                                          width: 50,
+                                          height: 90,
+                                        ),
+                                        const SizedBox(height: 10),
+                                        CircularPercentIndicator(
+                                          radius: 40.0,
+                                          lineWidth: 10.0,
+                                          percent: 0.80,
+                                          progressColor: Colors.red,
+                                          backgroundColor: Colors.white,
+                                          center: Text(
+                                            "80%",
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 18,
@@ -297,7 +319,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           radius: 40.0,
                                           lineWidth: 10.0,
                                           percent: 0.80,
-                                          progressColor: Colors.yellow,
+                                          progressColor: Colors.amber,
                                           backgroundColor: Colors.white,
                                           center: Text(
                                             "80%",
