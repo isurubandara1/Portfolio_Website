@@ -165,11 +165,12 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         CircularPercentIndicator(
                                           radius: 40.0,
                                           lineWidth: 10.0,
-                                          percent: 0.25,
-                                          progressColor: Colors.blue,
+                                          percent: 0.85,
+                                          progressColor: const Color.fromARGB(
+                                              255, 1, 28, 51),
                                           backgroundColor: Colors.white,
                                           center: Text(
-                                            "75%",
+                                            "85%",
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 18,
@@ -191,11 +192,11 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         CircularPercentIndicator(
                                           radius: 40.0,
                                           lineWidth: 10.0,
-                                          percent: 0.25,
-                                          progressColor: Colors.blue,
+                                          percent: 0.8,
+                                          progressColor: Colors.lightBlue,
                                           backgroundColor: Colors.white,
                                           center: Text(
-                                            "75%",
+                                            "80%",
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 18,
@@ -217,8 +218,8 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         CircularPercentIndicator(
                                           radius: 40.0,
                                           lineWidth: 10.0,
-                                          percent: 0.25,
-                                          progressColor: Colors.blue,
+                                          percent: 0.75,
+                                          progressColor: Colors.brown,
                                           backgroundColor: Colors.white,
                                           center: Text(
                                             "75%",
@@ -243,11 +244,11 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         CircularPercentIndicator(
                                           radius: 40.0,
                                           lineWidth: 10.0,
-                                          percent: 0.25,
-                                          progressColor: Colors.blue,
+                                          percent: 0.70,
+                                          progressColor: Colors.yellow,
                                           backgroundColor: Colors.white,
                                           center: Text(
-                                            "75%",
+                                            "70%",
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 18,
@@ -269,8 +270,8 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         CircularPercentIndicator(
                                           radius: 40.0,
                                           lineWidth: 10.0,
-                                          percent: 0.25,
-                                          progressColor: Colors.blue,
+                                          percent: 0.75,
+                                          progressColor: Colors.blueGrey,
                                           backgroundColor: Colors.white,
                                           center: Text(
                                             "75%",
@@ -295,11 +296,11 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                         CircularPercentIndicator(
                                           radius: 40.0,
                                           lineWidth: 10.0,
-                                          percent: 0.25,
-                                          progressColor: Colors.blue,
+                                          percent: 0.80,
+                                          progressColor: Colors.yellow,
                                           backgroundColor: Colors.white,
                                           center: Text(
-                                            "75%",
+                                            "80%",
                                             style: TextStyle(
                                               color: Colors.white,
                                               fontSize: 18,
