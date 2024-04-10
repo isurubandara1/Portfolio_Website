@@ -79,6 +79,8 @@ flutter:
     - assets/flutter.png
     - assets/git.png
     - assets/github.png
+    - assets/react.png
+    - assets/js.png
     - assets/pCover.png
     - assets/linkdin.png
     - assets/stackflow.png
