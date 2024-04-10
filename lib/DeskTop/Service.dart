@@ -173,11 +173,11 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           CircularPercentIndicator(
                                             radius: 40.0,
                                             lineWidth: 8.0,
-                                            percent: 0.85,
+                                            percent: 0.8,
                                             progressColor: Colors.green,
                                             backgroundColor: Colors.white,
                                             center: Text(
-                                              "85%",
+                                              "80%",
                                               style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 18,
@@ -187,7 +187,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 10),
+                                      SizedBox(width: 5),
                                       Column(
                                         children: [
                                           Image.asset(
@@ -221,7 +221,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 30),
+                                      SizedBox(width: 50),
                                       Column(
                                         children: [
                                           Image.asset(
@@ -241,11 +241,11 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           CircularPercentIndicator(
                                             radius: 40.0,
                                             lineWidth: 8.0,
-                                            percent: 0.8,
+                                            percent: 0.85,
                                             progressColor: Colors.lightBlue,
                                             backgroundColor: Colors.white,
                                             center: Text(
-                                              "80%",
+                                              "85%",
                                               style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 18,
@@ -255,7 +255,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 10),
+                                      SizedBox(width: 5),
                                       Column(
                                         children: [
                                           Image.asset(
@@ -276,8 +276,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                             radius: 40.0,
                                             lineWidth: 8.0,
                                             percent: 0.75,
-                                            progressColor: const Color.fromARGB(
-                                                255, 1, 49, 73),
+                                            progressColor: Colors.pink,
                                             backgroundColor: Colors.white,
                                             center: Text(
                                               "75%",
@@ -290,7 +289,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 10),
+                                      SizedBox(width: 5),
                                       Column(
                                         children: [
                                           Image.asset(
@@ -324,7 +323,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 30),
+                                      SizedBox(width: 50),
                                       Column(
                                         children: [
                                           Image.asset(
@@ -344,11 +343,11 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           CircularPercentIndicator(
                                             radius: 40.0,
                                             lineWidth: 8.0,
-                                            percent: 0.75,
+                                            percent: 0.80,
                                             progressColor: Colors.brown,
                                             backgroundColor: Colors.white,
                                             center: Text(
-                                              "75%",
+                                              "80%",
                                               style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 18,
@@ -358,7 +357,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 10),
+                                      SizedBox(width: 5),
                                       Column(
                                         children: [
                                           Image.asset(
@@ -392,7 +391,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 30),
+                                      SizedBox(width: 50),
                                       Column(
                                         children: [
                                           Image.asset(
