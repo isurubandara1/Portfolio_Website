@@ -144,6 +144,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                     ),
                     Column(children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(
                             "assets/dart.png",
@@ -176,7 +177,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(width: 5),
+                      SizedBox(height: 5),
                       Row(
                         children: [
                           Image.asset(
@@ -184,7 +185,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                             width: 40,
                             height: 90,
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           Text(
                             "Javascript",
                             style: TextStyle(
@@ -192,7 +193,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               color: Colors.white,
                             ),
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           CircularPercentIndicator(
                             radius: 40.0,
                             lineWidth: 8.0,
@@ -210,7 +211,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(width: 50),
+                      SizedBox(height: 50),
                       Row(
                         children: [
                           Image.asset(
@@ -218,7 +219,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                             width: 100,
                             height: 90,
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           Text(
                             "Flutter",
                             style: TextStyle(
@@ -226,7 +227,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               color: Colors.white,
                             ),
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           CircularPercentIndicator(
                             radius: 40.0,
                             lineWidth: 8.0,
@@ -244,7 +245,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(width: 5),
+                      SizedBox(height: 5),
                       Row(
                         children: [
                           Image.asset(
@@ -252,7 +253,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                             width: 50,
                             height: 90,
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           Text(
                             "React Native",
                             style: TextStyle(
@@ -260,7 +261,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               color: Colors.white,
                             ),
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           CircularPercentIndicator(
                             radius: 40.0,
                             lineWidth: 8.0,
@@ -278,7 +279,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(width: 5),
+                      SizedBox(height: 5),
                       Row(
                         children: [
                           Image.asset(
@@ -286,7 +287,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                             width: 50,
                             height: 90,
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           Text(
                             "React",
                             style: TextStyle(
@@ -294,7 +295,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               color: Colors.white,
                             ),
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           CircularPercentIndicator(
                             radius: 40.0,
                             lineWidth: 8.0,
@@ -312,7 +313,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(width: 50),
+                      SizedBox(height: 50),
                       Row(
                         children: [
                           Image.asset(
@@ -320,7 +321,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                             width: 60,
                             height: 90,
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           Text(
                             "Github",
                             style: TextStyle(
@@ -328,7 +329,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               color: Colors.white,
                             ),
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           CircularPercentIndicator(
                             radius: 40.0,
                             lineWidth: 8.0,
@@ -346,7 +347,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(width: 5),
+                      SizedBox(height: 5),
                       Row(
                         children: [
                           Image.asset(
@@ -354,7 +355,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                             width: 50,
                             height: 90,
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           Text(
                             "Git",
                             style: TextStyle(
@@ -362,7 +363,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               color: Colors.white,
                             ),
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           CircularPercentIndicator(
                             radius: 40.0,
                             lineWidth: 8.0,
@@ -380,7 +381,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(width: 50),
+                      SizedBox(height: 50),
                       Row(
                         children: [
                           Image.asset(
@@ -388,7 +389,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                             width: 80,
                             height: 90,
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           Text(
                             "Firebase",
                             style: TextStyle(
@@ -396,7 +397,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                               color: Colors.white,
                             ),
                           ),
-                          const SizedBox(height: 5),
+                          const SizedBox(width: 5),
                           CircularPercentIndicator(
                             radius: 40.0,
                             lineWidth: 8.0,
