@@ -61,7 +61,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
         ),
         centerTitle: true,
       ),
-      backgroundColor: const Color.fromRGBO(0, 0, 0, 0),
+      backgroundColor: Colors.black87,
       body: AnimatedBuilder(
         animation: _animation,
         builder: (context, child) {
@@ -74,6 +74,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                 image: DecorationImage(
                   image: AssetImage('assets/cover.jpg'),
                   fit: BoxFit.cover,
+                  opacity: 0.3,
                 ),
               ),
               child: SingleChildScrollView(
@@ -82,58 +83,56 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                     const SizedBox(
                       height: 30,
                     ),
-                    Container(
-                      width: 300,
-                      height: 450,
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white, width: 2.0),
-                        color: Colors.black87,
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: const SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            SizedBox(
-                              height: 10,
+                    SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            "Mobile Apps Development",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 26,
                             ),
-                            Text(
-                              "Mobile Apps Development",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            Text(
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10, right: 10),
+                            child: Text(
                               "I specialize in developing cross-platform mobile apps for Android and iOS using Flutter. My Mservices include seamless integration of Firebase for robust backend functionalities, ensuring efficient and scalable app solutions.",
                               textAlign: TextAlign.center,
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            SizedBox(
-                              height: 40,
-                            ),
-                            Text(
-                              "Web Development",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 20,
                               ),
                             ),
-                            SizedBox(
-                              height: 15,
+                          ),
+                          SizedBox(
+                            height: 40,
+                          ),
+                          Text(
+                            "Web Development",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 26,
                             ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 10, right: 10),
-                              child: Text(
-                                "I specialize in crafting responsive web applications using flutter. Delivering user-friendly websites with seamless navigation. Ensuring optimal performance and scalability. Additionally, I implement robust backend solutions to enhance functionality.",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(color: Colors.white),
-                              ),
+                          ),
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 10, right: 10),
+                            child: Text(
+                              "I specialize in crafting responsive web applications using flutter. Delivering user-friendly websites with seamless navigation. Ensuring optimal performance and scalability. Additionally, I implement robust backend solutions to enhance functionality.",
+                              textAlign: TextAlign.center,
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 20),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                     const SizedBox(
@@ -143,7 +142,6 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                       width: 300,
                       height: 450,
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white, width: 2.0),
                         color: Colors.black87,
                         borderRadius: BorderRadius.circular(10.0),
                       ),
