@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 import '../PageRouter.dart';
 import 'Mcomman.dart';
@@ -138,118 +139,282 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                     const SizedBox(
                       height: 20,
                     ),
-                    Container(
-                      width: 300,
-                      height: 450,
-                      decoration: BoxDecoration(
-                        color: Colors.black87,
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: SingleChildScrollView(
-                        child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Image.asset(
-                                    "assets/dart.png",
-                                    width: 90,
-                                    height: 90,
-                                  ),
-                                  const SizedBox(width: 10),
-                                  const Text(
-                                    "Excellent    90%",
-                                    style: TextStyle(
-                                        color: Colors.blue, fontSize: 20),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 2),
-                              Row(
-                                children: [
-                                  Image.asset(
-                                    "assets/flutter.png",
-                                    width: 90,
-                                    height: 90,
-                                  ),
-                                  const SizedBox(width: 10),
-                                  const Text(
-                                    "Excellent    85%",
-                                    style: TextStyle(
-                                        color: Colors.blue, fontSize: 20),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 5),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 10),
-                                child: Row(
-                                  children: [
-                                    Image.asset(
-                                      "assets/firebase.png",
-                                      width: 80,
-                                      height: 80,
-                                    ),
-                                    const SizedBox(width: 10),
-                                    const Text(
-                                      "Excellent    60%",
-                                      style: TextStyle(
-                                          color: Colors.blue, fontSize: 20),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(height: 20),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 30),
-                                child: Row(
-                                  children: [
-                                    Image.asset(
-                                      "assets/git.png",
-                                      width: 45,
-                                      height: 45,
-                                    ),
-                                    const SizedBox(width: 10),
-                                    const Padding(
-                                      padding: EdgeInsets.only(left: 15),
-                                      child: Text(
-                                        "Excellent    80%",
-                                        style: TextStyle(
-                                            color: Colors.blue, fontSize: 20),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(height: 30),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 25),
-                                child: Row(
-                                  children: [
-                                    Image.asset(
-                                      "assets/github.png",
-                                      width: 60,
-                                      height: 60,
-                                    ),
-                                    const SizedBox(width: 10),
-                                    const Padding(
-                                      padding: EdgeInsets.only(left: 5),
-                                      child: Text(
-                                        "Excellent    80%",
-                                        style: TextStyle(
-                                            color: Colors.blue, fontSize: 20),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(height: 5),
-                            ]),
-                      ),
-                    ),
                     SizedBox(
                       height: 20,
                     ),
+                    Column(children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/dart.png",
+                            width: 100,
+                            height: 90,
+                          ),
+                          const SizedBox(width: 5),
+                          Text(
+                            "Dart",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(width: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.8,
+                            progressColor: Colors.green,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "80%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 5),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/js.png",
+                            width: 40,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Javascript",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.70,
+                            progressColor: Colors.yellow,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "70%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 50),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/flutter.png",
+                            width: 100,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Flutter",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.85,
+                            progressColor: Colors.lightBlue,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "85%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 5),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/react.png",
+                            width: 50,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "React Native",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.75,
+                            progressColor: Colors.pink,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "75%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 5),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/react.png",
+                            width: 50,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "React",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.70,
+                            progressColor: Colors.blueGrey,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "70%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 50),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/github.png",
+                            width: 60,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Github",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.80,
+                            progressColor: Colors.brown,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "80%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 5),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/git.png",
+                            width: 50,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Git",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.80,
+                            progressColor: Colors.red,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "80%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 50),
+                      Row(
+                        children: [
+                          Image.asset(
+                            "assets/firebase.png",
+                            width: 80,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Firebase",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 40.0,
+                            lineWidth: 8.0,
+                            percent: 0.80,
+                            progressColor: Colors.amber,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "80%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ]),
                   ],
                 ),
               ),
