@@ -81,6 +81,8 @@ flutter:
     - assets/github.png
     - assets/react.png
     - assets/js.png
+    - assets/java.png
+    - assets/springboot.png
     - assets/pCover.png
     - assets/linkdin.png
     - assets/stackflow.png
@@ -122,6 +124,8 @@ flutter:
     - assets/News/n6.png
     - assets/News/n7.png
     - assets/News/n8.png
+    - assets/Gpa/gpapp.png
+    - assets/Gpa/gpaweb.png
    
 
 

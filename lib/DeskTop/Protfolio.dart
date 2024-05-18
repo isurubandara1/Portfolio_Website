@@ -319,6 +319,122 @@ class Protfolio extends StatelessWidget {
                     ),
                   ],
                 ),
+
+                lineSpace(context, 5),
+
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 60),
+                      child: Center(
+                        child: Image.asset(
+                          "assets/Gpa/gpaweb.png",
+                          width: 400,
+                          height: 500,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          const Text(
+                            "GPA Estimator Website/App",
+                            style: TextStyle(color: Colors.white, fontSize: 30),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          const Text(
+                            "This website can be used to predict GPA in university, so you can get an idea about degree class.\n The website and App is created using the React and React Native Frameworks.",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _launchURL(
+                                        'https://github.com/isurubandara1/GPA_Calculator_Website');
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: Colors.black12,
+                                    onPrimary: Colors.white,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50.0),
+                                      side: const BorderSide(
+                                          color: Colors.blue, width: 2.0),
+                                    ),
+                                    minimumSize: const Size(50, 50),
+                                  ),
+                                  child: Image.asset(
+                                    "assets/github.png",
+                                    width: 30,
+                                  )),
+                              SizedBox(
+                                width: 20,
+                              ),
+                              ElevatedButton(
+                                  onPressed: () {
+                                    _launchURL(
+                                        'https://github.com/isurubandara1/GPA_Estimator_App');
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: Colors.black12,
+                                    onPrimary: Colors.white,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50.0),
+                                      side: const BorderSide(
+                                          color: Colors.blue, width: 2.0),
+                                    ),
+                                    minimumSize: const Size(50, 50),
+                                  ),
+                                  child: Image.asset(
+                                    "assets/github.png",
+                                    width: 30,
+                                  )),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        _launchURL(
+                            'https://github.com/isurubandara1/GPA_Estimator_App');
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.blue,
+                        onPrimary: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          side:
+                              const BorderSide(color: Colors.blue, width: 2.0),
+                        ),
+                        minimumSize: Size(120, 60),
+                      ),
+                      child: const Text(
+                        "View More Projects ➡️",
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20,
+                ),
               ],
             ),
           ),
