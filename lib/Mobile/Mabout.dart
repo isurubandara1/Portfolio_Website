@@ -132,12 +132,28 @@ class Mabout extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.only(left: 25, right: 10),
                 child: SelectableText(
-                  "Flutter, Firebase, React Native, Git, Github",
-                  style: TextStyle(color: Colors.white, fontSize: 18),
+                  "Flutter, Firebase, React Native \n Spring Boot, Git, Github",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
 
+            const SizedBox(
+              height: 15,
+            ),
+            Center(
+              child: const Padding(
+                padding: EdgeInsets.only(left: 25, right: 10),
+                child: SelectableText(
+                  "Java,Dart,Javascript",
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+              ),
+            ),
             const SizedBox(
               height: 15,
             ),
@@ -168,7 +184,10 @@ class Mabout extends StatelessWidget {
                   ),
                   minimumSize: Size(120, 60),
                 ),
-                child: const Text("Download CV"),
+                child: const Text(
+                  "Download CV",
+                  style: TextStyle(fontSize: 17),
+                ),
               ),
             ),
             const SizedBox(

@@ -158,44 +158,120 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                               ),
                             ),
                             const SizedBox(height: 30),
-                            const Padding(
+                            Padding(
                               padding: EdgeInsets.only(left: 80, bottom: 10),
-                              child: SelectableText(
-                                "Email   :  isurumbandara@gmail.com",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 16),
+                              child: RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Email   :  ",
+                                      style: TextStyle(
+                                          color: Colors.blue, fontSize: 19),
+                                    ),
+                                    TextSpan(
+                                      text: "isurumbandara@gmail.com",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                            const Padding(
-                              padding: EdgeInsets.only(left: 80, bottom: 20),
-                              child: SelectableText(
-                                "Phone  :  +94 704394554  / +94 761210812",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 16),
-                              ),
-                            ),
-                            const Padding(
+                            Padding(
                               padding: EdgeInsets.only(left: 80, bottom: 10),
-                              child: SelectableText(
-                                "Skills  :  Flutter , React Native, Firebase , Git , Github ",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 16),
+                              child: RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Phone  :  ",
+                                      style: TextStyle(
+                                          color: Colors.blue, fontSize: 19),
+                                    ),
+                                    TextSpan(
+                                      text: "+94 704394554  / +94 761210812",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                            const Padding(
+                            Padding(
                               padding: EdgeInsets.only(left: 80, bottom: 10),
-                              child: SelectableText(
-                                "Education  : BSc. Honours Degree in Computing & Information Systems",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 16),
+                              child: RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Skills  :  ",
+                                      style: TextStyle(
+                                          color: Colors.blue, fontSize: 19),
+                                    ),
+                                    TextSpan(
+                                      text:
+                                          "Flutter , React Native, Firebase , Spring boot, Git , Github ",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                            const Padding(
+                            Padding(
+                              padding: EdgeInsets.only(left: 80, bottom: 10),
+                              child: RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Programming Languages  :  ",
+                                      style: TextStyle(
+                                          color: Colors.blue, fontSize: 19),
+                                    ),
+                                    TextSpan(
+                                      text: "Java, Dart, Javascript",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(left: 80, bottom: 10),
+                              child: RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Education  : ",
+                                      style: TextStyle(
+                                          color: Colors.blue, fontSize: 19),
+                                    ),
+                                    TextSpan(
+                                      text:
+                                          "BSc. Honours Degree in Computing & Information Systems",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Padding(
                               padding: EdgeInsets.only(left: 80, bottom: 30),
-                              child: SelectableText(
-                                "Experience  :   1 year",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 16),
+                              child: RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Experience  :   ",
+                                      style: TextStyle(
+                                          color: Colors.blue, fontSize: 19),
+                                    ),
+                                    TextSpan(
+                                      text: "1 year",
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 16),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                             SlideTransition(
