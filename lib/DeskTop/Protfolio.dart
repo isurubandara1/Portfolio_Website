@@ -419,7 +419,7 @@ class Protfolio extends StatelessWidget {
                         primary: Colors.blue,
                         onPrimary: Colors.white,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
+                          borderRadius: BorderRadius.circular(20.0),
                           side:
                               const BorderSide(color: Colors.blue, width: 2.0),
                         ),
