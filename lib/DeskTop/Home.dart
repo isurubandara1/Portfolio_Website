@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:file_saver/file_saver.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:protfolio/DeskTop/About.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
 
@@ -14,20 +15,18 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black87,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            // NavBar
+      body: Column(
+        children: [
+          // NavBar
 
-            Navbar(context),
-            const SizedBox(
-              height: 10,
-            ),
+          Navbar(context),
+          const SizedBox(
+            height: 10,
+          ),
 
-            // Content
-            AnimatedContent(),
-          ],
-        ),
+          // Content
+          Expanded(child: SingleChildScrollView(child: AnimatedContent())),
+        ],
       ),
     );
   }
