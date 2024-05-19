@@ -18,7 +18,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: Duration(seconds: 2),
     );
 
     _imageAnimation = Tween<double>(begin: -200, end: 0).animate(
