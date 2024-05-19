@@ -407,30 +407,36 @@ class Protfolio extends StatelessWidget {
                   height: 20,
                 ),
 
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {
-                        _launchURL(
-                            'https://github.com/isurubandara1/GPA_Estimator_App');
-                      },
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.blue,
-                        onPrimary: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                          side:
-                              const BorderSide(color: Colors.blue, width: 2.0),
+                Padding(
+                  padding: const EdgeInsets.only(right: 40),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          _launchURL(
+                              'https://github.com/isurubandara1?tab=repositories');
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.black12,
+                          onPrimary: Colors.white,
+                          elevation: 5,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                            side: const BorderSide(
+                                color: Colors.blue, width: 3.0),
+                          ),
                         ),
-                        minimumSize: Size(120, 60),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: const Text(
+                            "More Projects ...",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
                       ),
-                      child: const Text(
-                        "View More Projects ➡️",
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: 20,
