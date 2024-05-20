@@ -173,7 +173,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(height: 80),
+                      SizedBox(height: 60),
                       Column(
                         children: [
                           Image.asset(
@@ -207,7 +207,41 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(height: 70),
+                      SizedBox(height: 60),
+                      Column(
+                        children: [
+                          Image.asset(
+                            "assets/java.png",
+                            width: 180,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Java",
+                            style: TextStyle(
+                              fontSize: 25,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 60.0,
+                            lineWidth: 15.0,
+                            percent: 0.70,
+                            progressColor: Colors.green,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "70%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 60),
                       Column(
                         children: [
                           Image.asset(
@@ -241,7 +275,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(height: 80),
+                      SizedBox(height: 60),
                       Column(
                         children: [
                           Image.asset(
@@ -275,7 +309,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(height: 80),
+                      SizedBox(height: 60),
                       Column(
                         children: [
                           Image.asset(
@@ -309,7 +343,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(height: 80),
+                      SizedBox(height: 60),
                       Column(
                         children: [
                           Image.asset(
@@ -343,7 +377,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(height: 80),
+                      SizedBox(height: 60),
                       Column(
                         children: [
                           Image.asset(
@@ -377,7 +411,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           ),
                         ],
                       ),
-                      SizedBox(height: 70),
+                      SizedBox(height: 60),
                       Column(
                         children: [
                           Image.asset(
@@ -412,6 +446,41 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           SizedBox(height: 50),
                         ],
                       ),
+                      SizedBox(height: 40),
+                      Column(
+                        children: [
+                          Image.asset(
+                            "assets/springboot.png",
+                            width: 60,
+                            height: 90,
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Spring Boot",
+                            style: TextStyle(
+                              fontSize: 25,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          CircularPercentIndicator(
+                            radius: 60.0,
+                            lineWidth: 15.0,
+                            percent: 0.70,
+                            progressColor: Colors.green,
+                            backgroundColor: Colors.white,
+                            center: Text(
+                              "70%",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 50),
                     ]),
                   ],
                 ),
