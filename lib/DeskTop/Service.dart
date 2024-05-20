@@ -127,7 +127,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                     padding:
                                         EdgeInsets.only(left: 20, right: 20),
                                     child: Text(
-                                      "I specialize in crafting responsive web applications using React and Flutter,\n delivering user-friendly websites with seamless navigation and ensuring optimal performance and scalability.\nAdditionally, I implement robust backend solutions to enhance functionality",
+                                      "I specialize in crafting responsive web applications using React and Flutter,\n delivering user-friendly websites with seamless navigation and ensuring optimal performance and scalability.\nAdditionally, I implement robust backend solutions to enhance functionality.",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,

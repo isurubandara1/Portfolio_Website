@@ -45,7 +45,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
         title: const Text(
           "My Services  💼 🌐 📱",
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.blue,
             fontWeight: FontWeight.bold,
             fontSize: 30,
           ),
@@ -103,7 +103,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           Padding(
                             padding: const EdgeInsets.only(left: 10, right: 10),
                             child: Text(
-                              "I specialize in developing cross-platform mobile apps for Android and iOS using Flutter. My Mservices include seamless integration of Firebase for robust backend functionalities, ensuring efficient and scalable app solutions.",
+                              "I specialize in developing cross-platform mobile apps for Android and iOS using Flutter and React Native. My services include the seamless integration of Firebase and Spring Boot for robust backend functionalities, ensuring efficient and scalable app solutions.",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.white,
@@ -127,7 +127,7 @@ class _MserviceState extends State<Mservice> with TickerProviderStateMixin {
                           Padding(
                             padding: EdgeInsets.only(left: 10, right: 10),
                             child: Text(
-                              "I specialize in crafting responsive web applications using flutter. Delivering user-friendly websites with seamless navigation. Ensuring optimal performance and scalability. Additionally, I implement robust backend solutions to enhance functionality.",
+                              "I specialize in crafting responsive web applications using React and Flutter, delivering user-friendly websites with seamless navigation and ensuring optimal performance and scalability. Additionally, I implement robust backend solutions to enhance functionality.",
                               textAlign: TextAlign.center,
                               style:
                                   TextStyle(color: Colors.white, fontSize: 22),

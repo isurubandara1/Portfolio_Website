@@ -144,7 +144,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                     ),
                                     TextSpan(
                                       text:
-                                          "Flutter, React Native, Firebase, Git, and Github. Let's collaborate and bring your app ideas to life! ",
+                                          "Mobile development and Web Development. Let's collaborate and bring your app ideas to life! ",
                                     ),
                                     TextSpan(
                                       text: "📱✨",
@@ -188,7 +188,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                           color: Colors.blue, fontSize: 19),
                                     ),
                                     TextSpan(
-                                      text: "+94 704394554  / +94 761210812",
+                                      text: "+94 704394554",
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 16),
                                     ),

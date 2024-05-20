@@ -1,15 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:protfolio/Mobile/Mabout.dart';
-import 'DeskTop/Home.dart';
-import 'Mobile/Mhome.dart';
-import 'Mobile/Mprotfolio.dart';
-import 'Mobile/Mservice.dart';
 import 'PageRouter.dart';
 import 'Secret.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,6 +40,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
     );
   }

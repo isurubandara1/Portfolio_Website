@@ -85,7 +85,7 @@ class Mabout extends StatelessWidget {
                               "Hello!  I'm Isuru Bandara, a passionate Mobile developer with experience. I specialize in creating cross-platform mobile apps, blending functionality with aesthetic appeal.\n\n"),
                       TextSpan(
                         text:
-                            "Proficient in Flutter, Firebase, Git, and Github. Let's collaborate and bring your app ideas to life!",
+                            "Proficient in Mobile development and Web Development. Let's collaborate and bring your app ideas to life!",
                       ),
                       TextSpan(
                         text: "📱✨",
@@ -119,7 +119,7 @@ class Mabout extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.only(left: 25, right: 10),
                 child: SelectableText(
-                  "+94 704394554 \n+94 761210812",
+                  "+94 704394554",
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
