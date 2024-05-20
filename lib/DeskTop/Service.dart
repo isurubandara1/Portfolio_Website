@@ -101,7 +101,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                     padding:
                                         EdgeInsets.only(left: 20, right: 20),
                                     child: Text(
-                                      "I specialize in developing cross-platform mobile apps for Android and iOS using Flutter. My services include seamless integration of Firebase for robust backend functionalities, ensuring efficient and scalable app solutions.",
+                                      "I specialize in developing cross-platform mobile apps for Android and iOS using Flutter and React Native.\n My services include the seamless integration of Firebase and Spring Boot for robust backend functionalities,\n ensuring efficient and scalable app solutions.",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,
@@ -121,13 +121,13 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 15,
+                                    height: 12,
                                   ),
                                   Padding(
                                     padding:
                                         EdgeInsets.only(left: 20, right: 20),
                                     child: Text(
-                                      "I specialize in crafting responsive web applications using flutter. Delivering user-friendly websites with seamless navigation. Ensuring optimal performance and scalability. Additionally, I implement robust backend solutions to enhance functionality.",
+                                      "I specialize in crafting responsive web applications using React and Flutter,\n delivering user-friendly websites with seamless navigation and ensuring optimal performance and scalability.\nAdditionally, I implement robust backend solutions to enhance functionality",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         color: Colors.white,
