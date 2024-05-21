@@ -30,9 +30,7 @@ Future main() async {
   }
 
   runApp(
-    DevicePreview(
-      builder: (context) => MyApp(),
-    ),
+    MyApp(),
   );
 }
 

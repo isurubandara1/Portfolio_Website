@@ -3,7 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
 import 'Common.dart';
 
-class Protfolio extends StatelessWidget {
+class portfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

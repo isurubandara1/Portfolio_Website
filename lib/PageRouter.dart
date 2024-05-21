@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 import "package:protfolio/DeskTop/About.dart";
-import "package:protfolio/DeskTop/Protfolio.dart";
 import "package:protfolio/DeskTop/Service.dart";
+import "package:protfolio/DeskTop/portfolio.dart";
 import "package:protfolio/Mobile/Mabout.dart";
 import "package:protfolio/Mobile/Mprotfolio.dart";
 import "package:protfolio/Mobile/Mservice.dart";
@@ -70,7 +70,7 @@ class Pprotfolio extends StatelessWidget {
         builder: (context, constraints) {
           if (constraints.maxWidth > 850) {
             // Display Desktop version for widths greater than 800
-            return Protfolio();
+            return portfolio();
           } else {
             return Mprotfolio();
           }
