@@ -76,7 +76,7 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                         children: [
                           Container(
                             width: MediaQuery.of(context).size.width - 100,
-                            height: 300,
+                            height: 320,
                             decoration: BoxDecoration(
                               color: Colors.black54,
                               borderRadius: BorderRadius.circular(10.0),
@@ -143,358 +143,363 @@ class _ServiceState extends State<Service> with TickerProviderStateMixin {
                           const SizedBox(
                             width: 20,
                           ),
-                          Container(
-                            width: MediaQuery.of(context).size.width - 100,
-                            height: 300,
-                            child: SingleChildScrollView(
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 10, right: 10),
-                                child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/java.png",
-                                            width: 130,
-                                            height: 90,
-                                            fit: BoxFit.fill,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Java",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                left: 60, right: 60, bottom: 10),
+                            child: Container(
+                              width: MediaQuery.of(context).size.width - 100,
+                              child: SingleChildScrollView(
+                                scrollDirection: Axis.horizontal,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 10, right: 10),
+                                  child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/java.png",
+                                              width: 100,
+                                              height: 90,
+                                              fit: BoxFit.fill,
                                             ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "85%",
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Java",
                                               style: TextStyle(
+                                                fontSize: 20,
                                                 color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/dart.png",
-                                            width: 100,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Dart",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "85%",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "85%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 5),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/js.png",
-                                            width: 40,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Javascript",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
+                                          ],
+                                        ),
+                                        SizedBox(width: 5),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/dart.png",
+                                              width: 100,
+                                              height: 90,
                                             ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "80%",
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Dart",
                                               style: TextStyle(
+                                                fontSize: 20,
                                                 color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 5),
-                                      SizedBox(width: 50),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/flutter.png",
-                                            width: 100,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Flutter",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "85%",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "85%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 5),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/react.png",
-                                            width: 50,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "React Native",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
+                                          ],
+                                        ),
+                                        SizedBox(width: 5),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/js.png",
+                                              width: 40,
+                                              height: 90,
                                             ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "80%",
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Javascript",
                                               style: TextStyle(
+                                                fontSize: 20,
                                                 color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 5),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/react.png",
-                                            width: 50,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "React",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "70%",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "80%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 5),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/springboot.png",
-                                            width: 50,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Spring boot",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
+                                          ],
+                                        ),
+                                        SizedBox(width: 5),
+                                        SizedBox(width: 50),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/flutter.png",
+                                              width: 80,
+                                              height: 90,
                                             ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "70%",
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Flutter",
                                               style: TextStyle(
+                                                fontSize: 20,
                                                 color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 50),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/github.png",
-                                            width: 60,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Github",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "80%",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "85%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 5),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/git.png",
-                                            width: 50,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Git",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
+                                          ],
+                                        ),
+                                        SizedBox(width: 5),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/react.png",
+                                              width: 50,
+                                              height: 90,
                                             ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "80%",
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "React Native",
                                               style: TextStyle(
+                                                fontSize: 20,
                                                 color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(width: 5),
-                                      Column(
-                                        children: [
-                                          Image.asset(
-                                            "assets/firebase.png",
-                                            width: 80,
-                                            height: 90,
-                                          ),
-                                          const SizedBox(height: 5),
-                                          Text(
-                                            "Firebase",
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 5),
-                                          CircularPercentIndicator(
-                                            radius: 40.0,
-                                            lineWidth: 12.0,
-                                            percent: 0.80,
-                                            progressColor: Colors.green,
-                                            backgroundColor: Colors.white,
-                                            center: Text(
-                                              "75%",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.bold,
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "80%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                    ]),
+                                          ],
+                                        ),
+                                        SizedBox(width: 5),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/react.png",
+                                              width: 50,
+                                              height: 90,
+                                            ),
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "React",
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "70%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(width: 5),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/springboot.png",
+                                              width: 50,
+                                              height: 90,
+                                            ),
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Spring boot",
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "70%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(width: 50),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/github.png",
+                                              width: 60,
+                                              height: 90,
+                                            ),
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Github",
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "80%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(width: 20),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/git.png",
+                                              width: 50,
+                                              height: 90,
+                                            ),
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Git",
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "80%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(width: 20),
+                                        Column(
+                                          children: [
+                                            Image.asset(
+                                              "assets/firebase.png",
+                                              width: 80,
+                                              height: 90,
+                                            ),
+                                            const SizedBox(height: 5),
+                                            Text(
+                                              "Firebase",
+                                              style: TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            const SizedBox(height: 5),
+                                            CircularPercentIndicator(
+                                              radius: 40.0,
+                                              lineWidth: 12.0,
+                                              percent: 0.80,
+                                              progressColor: Colors.green,
+                                              backgroundColor: Colors.white,
+                                              center: Text(
+                                                "75%",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ]),
+                                ),
                               ),
                             ),
                           ),
