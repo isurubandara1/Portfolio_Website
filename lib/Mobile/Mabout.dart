@@ -1,4 +1,8 @@
+import "dart:typed_data";
+
+import "package:file_saver/file_saver.dart";
 import "package:flutter/material.dart";
+import "package:flutter/services.dart";
 import "Mcomman.dart";
 
 class Mabout extends StatelessWidget {
@@ -174,7 +178,9 @@ class Mabout extends StatelessWidget {
 
             Center(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  saveFileExample();
+                },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.blue,
                   onPrimary: Colors.white,
@@ -197,5 +203,25 @@ class Mabout extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+//Download the CV fron button
+Future<void> saveFileExample() async {
+  String fileName = 'CV.pdf';
+
+  try {
+    final ByteData data = await rootBundle.load('$fileName');
+    final Uint8List bytes = data.buffer.asUint8List();
+
+    String savedFilePath = await FileSaver.instance.saveFile(
+      name: fileName,
+      bytes: bytes,
+      ext: 'pdf',
+    );
+
+    print('File saved successfully at: $savedFilePath');
+  } catch (e) {
+    print('Error saving file: $e');
   }
 }

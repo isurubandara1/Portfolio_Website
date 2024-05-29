@@ -214,7 +214,7 @@ void _launchURL(String url) async {
 
 //Download the CV fron button
 Future<void> saveFileExample() async {
-  String fileName = 'priya19APC3953.pdf';
+  String fileName = 'CV.pdf';
 
   try {
     final ByteData data = await rootBundle.load('$fileName');
