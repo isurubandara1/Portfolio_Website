@@ -60,7 +60,7 @@ class Mabout extends StatelessWidget {
                         text: "I am ",
                       ),
                       TextSpan(
-                        text: "Mobile App Developer",
+                        text: "Mobile App and Web Developer",
                         style: TextStyle(
                           color: Color.fromARGB(255, 22, 205, 211),
                         ),
@@ -119,7 +119,7 @@ class Mabout extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.only(left: 25, right: 10),
                 child: SelectableText(
-                  "+94 704394554",
+                  "+94 704394554\n+94 761210812",
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
@@ -132,7 +132,7 @@ class Mabout extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.only(left: 25, right: 10),
                 child: SelectableText(
-                  "Flutter, Firebase, React Native \n Spring Boot, Git, Github",
+                  "Flutter, React Native, React \n Firebase, Spring Boot, Git, Github",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
@@ -161,7 +161,7 @@ class Mabout extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.only(left: 25, right: 10),
                 child: SelectableText(
-                  "I have a BSc. (Hons) in Computing & Information Systems degree and 1 year of experience.",
+                  "BSc. (Hons) in Computing & Information Systems Degree",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),

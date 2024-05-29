@@ -106,7 +106,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                         text: "I am ",
                                       ),
                                       TextSpan(
-                                        text: "Flutter Mobile App Developer",
+                                        text: "Mobile App and Web Developer",
                                         style: TextStyle(
                                           color:
                                               Color.fromARGB(255, 22, 205, 211),
@@ -188,7 +188,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                           color: Colors.blue, fontSize: 19),
                                     ),
                                     TextSpan(
-                                      text: "+94 704394554",
+                                      text: "+94 704394554 / +94 761210812",
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 16),
                                     ),
@@ -208,7 +208,7 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                     ),
                                     TextSpan(
                                       text:
-                                          "Flutter , React Native, Firebase , Spring boot, Git , Github ",
+                                          "Flutter , React Native, React, Firebase , Spring boot, Git , Github ",
                                       style: TextStyle(
                                           color: Colors.white, fontSize: 16),
                                     ),
@@ -255,25 +255,6 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsets.only(left: 80, bottom: 30),
-                              child: RichText(
-                                text: TextSpan(
-                                  children: [
-                                    TextSpan(
-                                      text: "Experience  :   ",
-                                      style: TextStyle(
-                                          color: Colors.blue, fontSize: 19),
-                                    ),
-                                    TextSpan(
-                                      text: "1 year",
-                                      style: TextStyle(
-                                          color: Colors.white, fontSize: 16),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
                             SlideTransition(
                               position: Tween<Offset>(
                                 begin: Offset(-1.0, 0.0),
@@ -284,7 +265,8 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                     Interval(0.5, 1.0, curve: Curves.easeInOut),
                               )),
                               child: Padding(
-                                padding: const EdgeInsets.only(left: 150),
+                                padding:
+                                    const EdgeInsets.only(left: 180, top: 10),
                                 child: ElevatedButton(
                                   onPressed: () {},
                                   style: ElevatedButton.styleFrom(
