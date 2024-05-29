@@ -53,7 +53,7 @@ class _AnimatedContentState extends State<AnimatedContent>
     super.initState();
 
     _controller = AnimationController(
-      duration: Duration(seconds: 2),
+      duration: Duration(seconds: 3),
       vsync: this,
     );
 

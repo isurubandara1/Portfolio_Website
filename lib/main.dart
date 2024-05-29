@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'PageRouter.dart';
 import 'Secret.dart';
-import 'package:device_preview/device_preview.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
