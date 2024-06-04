@@ -1,5 +1,4 @@
 import 'dart:typed_data';
-
 import 'package:file_saver/file_saver.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,17 +18,16 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           // NavBar
-
           Navbar(context),
           const SizedBox(
             height: 10,
           ),
-
           // Content
           Expanded(
-              child: SingleChildScrollView(
-            child: AnimatedContent(),
-          )),
+            child: SingleChildScrollView(
+              child: AnimatedContent(),
+            ),
+          ),
         ],
       ),
     );
@@ -42,17 +40,24 @@ class AnimatedContent extends StatefulWidget {
 }
 
 class _AnimatedContentState extends State<AnimatedContent>
-    with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
+    with TickerProviderStateMixin {
+  late AnimationController _oneTimeController;
+  late AnimationController _continuousController;
   late Animation<Offset> _textOffsetAnimation;
   late Animation<Offset> _imageOffsetAnimation;
   late Animation<double> _fadeInTextAnimation;
+  late Animation<double> _danceAnimation;
 
   @override
   void initState() {
     super.initState();
 
-    _controller = AnimationController(
+    _oneTimeController = AnimationController(
+      duration: Duration(seconds: 3),
+      vsync: this,
+    );
+
+    _continuousController = AnimationController(
       duration: Duration(seconds: 3),
       vsync: this,
     );
@@ -61,7 +66,7 @@ class _AnimatedContentState extends State<AnimatedContent>
       begin: Offset(-1.0, 0.0),
       end: Offset.zero,
     ).animate(CurvedAnimation(
-      parent: _controller,
+      parent: _oneTimeController,
       curve: Interval(0.0, 0.5, curve: Curves.easeOut),
     ));
 
@@ -69,24 +74,39 @@ class _AnimatedContentState extends State<AnimatedContent>
       begin: Offset(1.0, 0.0),
       end: Offset.zero,
     ).animate(CurvedAnimation(
-      parent: _controller,
+      parent: _oneTimeController,
       curve: Interval(0.0, 0.7, curve: Curves.easeOut),
     ));
 
     _fadeInTextAnimation = Tween<double>(
-      begin: 1.0,
+      begin: 0.0,
       end: 1.0,
     ).animate(CurvedAnimation(
-      parent: _controller,
+      parent: _oneTimeController,
       curve: Interval(0.7, 1.0, curve: Curves.easeIn),
     ));
 
-    _controller.forward();
+    _continuousController = AnimationController(
+      duration: Duration(seconds: 1), // Set the duration here
+      vsync: this,
+    );
+
+    _danceAnimation = Tween<double>(
+      begin: 0.0,
+      end: 20.0,
+    ).animate(CurvedAnimation(
+      parent: _continuousController,
+      curve: Curves.easeIn,
+    ));
+
+    _oneTimeController.forward();
+    _continuousController.repeat(reverse: true);
   }
 
   @override
   void dispose() {
-    _controller.dispose();
+    _oneTimeController.dispose();
+    _continuousController.dispose();
     super.dispose();
   }
 
@@ -212,7 +232,7 @@ class _AnimatedContentState extends State<AnimatedContent>
                     ),
                     Row(
                       children: [
-                        ElevatedButton(
+                        DancingButton(
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -220,34 +240,18 @@ class _AnimatedContentState extends State<AnimatedContent>
                                   builder: (context) => Contact()),
                             );
                           },
-                          style: ElevatedButton.styleFrom(
-                            primary: Colors.blue,
-                            onPrimary: Colors.white,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(7.0),
-                              side: const BorderSide(
-                                  color: Colors.blue, width: 2.0),
-                            ),
-                            minimumSize: Size(120, 60),
-                          ),
-                          child: const Text("Contact"),
+                          text: "Contact",
+                          color: Colors.blue,
+                          danceAnimation: _danceAnimation,
                         ),
                         const SizedBox(width: 16),
-                        ElevatedButton(
+                        DancingButton(
                           onPressed: () {
                             saveFileExample();
                           },
-                          style: ElevatedButton.styleFrom(
-                            primary: Colors.black12,
-                            onPrimary: Colors.white,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(7.0),
-                              side: const BorderSide(
-                                  color: Colors.blue, width: 2.0),
-                            ),
-                            minimumSize: Size(120, 60),
-                          ),
-                          child: const Text("Download CV"),
+                          text: "Download CV",
+                          color: Colors.black12,
+                          danceAnimation: _danceAnimation,
                         ),
                       ],
                     ),
@@ -255,20 +259,14 @@ class _AnimatedContentState extends State<AnimatedContent>
                 ),
               ),
             ),
-
             // Spacer
             const SizedBox(width: 16),
-
             // Profile image
             SlideTransition(
               position: _imageOffsetAnimation,
               child: Container(
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  // border: Border.all(
-                  //    color: Colors.blue,
-                  //   width: 2,
-                  // ),
                 ),
                 child: ClipOval(
                   child: SizedBox(
@@ -289,6 +287,45 @@ class _AnimatedContentState extends State<AnimatedContent>
   }
 }
 
+class DancingButton extends StatelessWidget {
+  final VoidCallback onPressed;
+  final String text;
+  final Color color;
+  final Animation<double> danceAnimation;
+
+  DancingButton({
+    required this.onPressed,
+    required this.text,
+    required this.color,
+    required this.danceAnimation,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: danceAnimation,
+      builder: (context, child) {
+        return Transform.translate(
+          offset: Offset(0, danceAnimation.value),
+          child: ElevatedButton(
+            onPressed: onPressed,
+            style: ElevatedButton.styleFrom(
+              primary: color,
+              onPrimary: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(7.0),
+                side: const BorderSide(color: Colors.blue, width: 2.0),
+              ),
+              minimumSize: Size(120, 60),
+            ),
+            child: Text(text),
+          ),
+        );
+      },
+    );
+  }
+}
+
 // Function to open a URL
 void _launchURL(String url) async {
   if (await canLaunch(url)) {
@@ -298,9 +335,9 @@ void _launchURL(String url) async {
   }
 }
 
-//Download the CV fron button
+//Download the CV from button
 Future<void> saveFileExample() async {
-  String fileName = 'CV.pdf';
+  String fileName = 'Isuru_Bandara_CV.pdf';
 
   try {
     final ByteData data = await rootBundle.load('$fileName');

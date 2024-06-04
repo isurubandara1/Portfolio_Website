@@ -208,7 +208,7 @@ class Mabout extends StatelessWidget {
 
 //Download the CV fron button
 Future<void> saveFileExample() async {
-  String fileName = 'CV.pdf';
+  String fileName = 'Isuru_Bandara_CV.pdf';
 
   try {
     final ByteData data = await rootBundle.load('$fileName');
