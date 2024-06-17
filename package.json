@@ -3,6 +3,6 @@
     "firebase": "^10.8.0"
   },
   "scripts": {
-    "build": "npm run build"
+    "build": "firebase deploy --only hosting"
   }
 }
