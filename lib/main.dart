@@ -42,23 +42,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: LayoutBuilder(
-//         builder: (context, constraints) {
-//           if (constraints.maxWidth > 700) {
-//             // Display Desktop version for widths greater than 600
-//             return HomePage();
-//           } else {
-//             // Display Mobile version for widths less than or equal to 600
-//             return Mhome();
-//           }
-//         },
-//       ),
-//     );
-//   }
-// }
