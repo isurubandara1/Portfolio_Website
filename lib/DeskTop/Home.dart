@@ -259,7 +259,6 @@ class _AnimatedContentState extends State<AnimatedContent>
                 ),
               ),
             ),
-            // Spacer
             const SizedBox(width: 16),
             // Profile image
             SlideTransition(
