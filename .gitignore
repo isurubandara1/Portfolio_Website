@@ -44,3 +44,4 @@ app.*.map.json
 
 lib/secret.dart
 
+node_modules
