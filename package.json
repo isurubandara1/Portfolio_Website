@@ -1,4 +1,11 @@
 {
+  "name": "protfolio",
+  "version": "1.0.0+1",
+  "description": "A new Flutter project.",
+  "main": "main.dart",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
   "dependencies": {
     "firebase": "^10.8.0"
   },
