@@ -260,7 +260,6 @@ class _AnimatedContentState extends State<AnimatedContent>
               ),
             ),
             const SizedBox(width: 16),
-            // Profile image
             SlideTransition(
               position: _imageOffsetAnimation,
               child: Container(
