@@ -3,6 +3,8 @@
     "firebase": "^10.8.0"
   },
   "scripts": {
-    "build": "firebase deploy --only hosting"
-  }
+  "prebuild": "npm install -g firebase-tools",
+  "build": "firebase deploy --only hosting"
+}
+
 }
