@@ -1,13 +1,8 @@
 {
-  "name": "protfolio",
-  "version": "1.0.0+1",
-  "description": "A new Flutter project.",
-  "main": "main.dart",
   "dependencies": {
     "firebase": "^10.8.0"
   },
-  "devDependencies": {
-    "webpack": "^5.92.0",
-    "webpack-cli": "^5.1.4"
+  "scripts": {
+    "build": "firebase deploy --only hosting"
   }
 }
