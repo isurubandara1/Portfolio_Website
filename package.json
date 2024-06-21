@@ -3,7 +3,7 @@
     "firebase": "^10.8.0"
   },
   "scripts": {
-    "prebuild": "npm install -g firebase-tools && firebase login",
+    "prebuild": "npm install -g firebase-tools && if [ -n \"$FIREBASE_TOKEN\" ]; then firebase login:ci --token $FIREBASE_TOKEN; else firebase login; fi",
     "build": "firebase deploy --only hosting"
   }
 }
