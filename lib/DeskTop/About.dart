@@ -4,6 +4,7 @@ import 'package:file_saver/file_saver.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:protfolio/DeskTop/Common.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -273,7 +274,8 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
                                     const EdgeInsets.only(left: 180, top: 10),
                                 child: ElevatedButton(
                                   onPressed: () {
-                                    saveFileExample();
+                                    _launchURL(
+                                        'https://drive.google.com/file/d/1vmOJdblHjv4ms5dY9L8KBlUV4hU6InSL/view');
                                   },
                                   style: ElevatedButton.styleFrom(
                                     primary: Colors.blue,
@@ -310,22 +312,29 @@ class _AboutState extends State<About> with SingleTickerProviderStateMixin {
   }
 }
 
-//Download the CV fron button
-Future<void> saveFileExample() async {
-  String fileName = 'Isuru_Bandara_CV.pdf';
-
-  try {
-    final ByteData data = await rootBundle.load('$fileName');
-    final Uint8List bytes = data.buffer.asUint8List();
-
-    String savedFilePath = await FileSaver.instance.saveFile(
-      name: fileName,
-      bytes: bytes,
-      ext: 'pdf',
-    );
-
-    print('File saved successfully at: $savedFilePath');
-  } catch (e) {
-    print('Error saving file: $e');
+void _launchURL(String url) async {
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
+
+// Future<void> saveFileExample() async {
+//   String fileName = 'Isuru_Bandara_CV.pdf';
+
+//   try {
+//     final ByteData data = await rootBundle.load('$fileName');
+//     final Uint8List bytes = data.buffer.asUint8List();
+
+//     String savedFilePath = await FileSaver.instance.saveFile(
+//       name: fileName,
+//       bytes: bytes,
+//       ext: 'pdf',
+//     );
+
+//     print('File saved successfully at: $savedFilePath');
+//   } catch (e) {
+//     print('Error saving file: $e');
+//   }
+// }

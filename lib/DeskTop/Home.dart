@@ -247,7 +247,8 @@ class _AnimatedContentState extends State<AnimatedContent>
                         const SizedBox(width: 16),
                         DancingButton(
                           onPressed: () {
-                            saveFileExample();
+                            _launchURL(
+                                'https://drive.google.com/file/d/1vmOJdblHjv4ms5dY9L8KBlUV4hU6InSL/view');
                           },
                           text: "Download CV",
                           color: Colors.black12,
@@ -325,7 +326,6 @@ class DancingButton extends StatelessWidget {
   }
 }
 
-// Function to open a URL
 void _launchURL(String url) async {
   if (await canLaunch(url)) {
     await launch(url);
@@ -334,22 +334,21 @@ void _launchURL(String url) async {
   }
 }
 
-//Download the CV from button
-Future<void> saveFileExample() async {
-  String fileName = 'Isuru_Bandara_CV.pdf';
+// Future<void> saveFileExample() async {
+//   String fileName = 'Isuru_Bandara_CV.pdf';
 
-  try {
-    final ByteData data = await rootBundle.load('$fileName');
-    final Uint8List bytes = data.buffer.asUint8List();
+//   try {
+//     final ByteData data = await rootBundle.load('$fileName');
+//     final Uint8List bytes = data.buffer.asUint8List();
 
-    String savedFilePath = await FileSaver.instance.saveFile(
-      name: fileName,
-      bytes: bytes,
-      ext: 'pdf',
-    );
+//     String savedFilePath = await FileSaver.instance.saveFile(
+//       name: fileName,
+//       bytes: bytes,
+//       ext: 'pdf',
+//     );
 
-    print('File saved successfully at: $savedFilePath');
-  } catch (e) {
-    print('Error saving file: $e');
-  }
-}
+//     print('File saved successfully at: $savedFilePath');
+//   } catch (e) {
+//     print('Error saving file: $e');
+//   }
+// }

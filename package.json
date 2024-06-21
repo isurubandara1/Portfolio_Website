@@ -2,8 +2,9 @@
   "dependencies": {
     "firebase": "^10.8.0"
   },
+
   "scripts": {
-    "prebuild": "npm install -g firebase-tools && if [ -n \"$FIREBASE_TOKEN\" ]; then firebase login:ci --token $FIREBASE_TOKEN; else firebase login; fi",
+    "prebuild": "npm install -g firebase-tools",
     "build": "firebase deploy --only hosting"
   }
 }
