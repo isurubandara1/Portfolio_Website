@@ -2,6 +2,7 @@
   "dependencies": {
     "firebase": "^10.8.0"
   },
+
   "scripts": {
     "prebuild": "npm install -g firebase-tools",
     "build": "firebase deploy --only hosting"
