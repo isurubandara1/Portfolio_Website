@@ -25,7 +25,6 @@ Future main() async {
     }
   } catch (e) {
     print('Error initializing Firebase: $e');
-    // Handle the error as needed (e.g., show an error message)
   }
 
   runApp(
